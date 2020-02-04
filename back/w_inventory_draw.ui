@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_inventory_draw</class>
+ <widget class="QDialog" name="w_inventory_draw">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>617</width>
+    <height>442</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="lds_datetimeEdit" name="dateTimeEdit_from"/>
+     </item>
+     <item>
+      <widget class="lds_datetimeEdit" name="dateTimeEdit_to"/>
+     </item>
+     <item>
+      <widget class="lds_ComboBox" name="comboBox_ch_state"/>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_select">
+       <property name="text">
+        <string>查询</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_new">
+       <property name="text">
+        <string>新增</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_change">
+       <property name="text">
+        <string>查看</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_del">
+       <property name="text">
+        <string>删除</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_audit">
+       <property name="text">
+        <string>审核</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton_blue</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_bad">
+       <property name="text">
+        <string>作废</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton_blue</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="lds_tableView" name="tableView"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_datetimeEdit</class>
+   <extends>QDateTimeEdit</extends>
+   <header>lds_datetimeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

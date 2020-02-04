@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_cardic_Dialog</class>
+ <widget class="QDialog" name="w_m_member_cardic_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">color:#ff546b;</string>
+     </property>
+     <property name="text">
+      <string>说明:此操作只是将当前卡的芯片信息置空,不会改动系统本身信息</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>会员卡卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_memberno"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>会员状态</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="lineEdit_ch_state"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>卡面余额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_num_amount"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>卡面积分</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_point"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="lds_toolbar" name="widget"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_doublespinbox_lineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

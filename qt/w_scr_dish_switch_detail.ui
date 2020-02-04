@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_switch_detail</class>
+ <widget class="QDialog" name="w_scr_dish_switch_detail">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>633</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0">
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="showGrid">
+        <bool>false</bool>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>120</number>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+       <attribute name="verticalHeaderDefaultSectionSize">
+        <number>19</number>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>New Row</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>New Column</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>New Column</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>New Column</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>New Column</string>
+        </property>
+       </column>
+       <item row="0" column="1">
+        <property name="text">
+         <string>交班对账表</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="text">
+         <string>交班员</string>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>xx</string>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="text">
+         <string>接班人</string>
+        </property>
+       </item>
+       <item row="1" column="3">
+        <property name="text">
+         <string>xxx</string>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="text">
+         <string>开始时间</string>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>2015-14-15</string>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="text">
+         <string>交班时间</string>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>2015-14-15</string>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_set">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="public_pushbuton_number" name="pushButton_vch_memo">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>备注</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_left_right" name="checkBox">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>交班打印</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_left_right" name="checkBox_print_detail">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>按单号打印流水</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_left_right" name="checkBox_cash_fee_keep_to_accept">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>备用金交给接班人</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_left_right" name="checkBox_print_sale_detail">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>打印类别汇总</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_number" name="pushButton_cash_register">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>备用金</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_number" name="pushButton_printcount">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>打印份数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_number" name="pushButton_fetch">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>取钱(总计)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="public_pushbuton_number" name="pushButton_fetch_record">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>取钱记录(次数)</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0">
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_set">
+       <property name="text">
+        <string>更多</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_email">
+       <property name="text">
+        <string>邮箱</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_print">
+       <property name="text">
+        <string>打印</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_finish">
+       <property name="text">
+        <string>完成交班</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_switch">
+       <property name="text">
+        <string>交班</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_left_right</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_left_right.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_number</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_number.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_switch</tabstop>
+  <tabstop>pushButton_print</tabstop>
+  <tabstop>pushButton_finish</tabstop>
+  <tabstop>pushButton_exit</tabstop>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

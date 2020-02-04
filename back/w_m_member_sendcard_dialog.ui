@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_sendcard_Dialog</class>
+ <widget class="QDialog" name="w_m_member_sendcard_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>551</width>
+    <height>408</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>基础资料</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <widget class="QFrame" name="frame_detail_show">
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="1" column="2">
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>有效期限</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_cardno"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_vch_member">
+            <property name="text">
+             <string>会员名称</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="lds_datetimeEdit" name="dateTimeEdit_dt_limit_show"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_member"/>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>证件编号</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="3">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="lds_ComboBox" name="comboBox_ch_state"/>
+            </item>
+           </layout>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_id"/>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>生日</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_vch_memberno">
+            <property name="text">
+             <string>会员编号</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>地址</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_address"/>
+          </item>
+          <item row="7" column="2">
+           <widget class="QLabel" name="label_27">
+            <property name="text">
+             <string>建档时间</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="2">
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>建档人员</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="3">
+           <widget class="QLineEdit" name="lineEdit_vch_operid">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="3">
+           <widget class="lds_datetimeEdit" name="dateTimeEdit_dt_operdate_show"/>
+          </item>
+          <item row="3" column="3">
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">background:transparent;
+border:0px;
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="lds_datetimeEdit" name="dateTimeEdit_dt_birthday_show"/>
+          </item>
+          <item row="5" column="0">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>电话</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLabel" name="label_11">
+            <property name="text">
+             <string>会员状态</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_tel"/>
+          </item>
+          <item row="0" column="3">
+           <widget class="lds_ComboBox" name="comboBox_ch_typeno"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>卡面卡号</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="3">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="lds_ComboBox" name="comboBox_ch_cardflag"/>
+            </item>
+           </layout>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="label_vch_handtel">
+            <property name="text">
+             <string>手机</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_handtel"/>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>持卡状态</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_vch_memberno"/>
+          </item>
+          <item row="0" column="2">
+           <widget class="pushbutton_underline" name="pushButton_ch_typeno">
+            <property name="text">
+             <string>会员类型</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>其他资料</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+       <item>
+        <widget class="lds_tableView" name="tableView_other"/>
+       </item>
+       <item>
+        <widget class="lds_toolbar" name="widget_2"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>操作日志</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="lds_tableView" name="tableView_log"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_record">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar" name="widget"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>pushbutton_underline</class>
+   <extends>QPushButton</extends>
+   <header>pushbutton_underline.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_datetimeEdit</class>
+   <extends>QDateTimeEdit</extends>
+   <header>lds_datetimeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton</tabstop>
+  <tabstop>lineEdit_vch_memberno</tabstop>
+  <tabstop>lineEdit_vch_cardno</tabstop>
+  <tabstop>lineEdit_vch_member</tabstop>
+  <tabstop>lineEdit_vch_id</tabstop>
+  <tabstop>dateTimeEdit_dt_birthday_show</tabstop>
+  <tabstop>dateTimeEdit_dt_limit_show</tabstop>
+  <tabstop>comboBox_ch_state</tabstop>
+  <tabstop>lineEdit_vch_tel</tabstop>
+  <tabstop>comboBox_ch_cardflag</tabstop>
+  <tabstop>lineEdit_vch_handtel</tabstop>
+  <tabstop>lineEdit_vch_operid</tabstop>
+  <tabstop>lineEdit_vch_address</tabstop>
+  <tabstop>dateTimeEdit_dt_operdate_show</tabstop>
+  <tabstop>tableView_other</tabstop>
+  <tabstop>tableView_log</tabstop>
+  <tabstop>comboBox_ch_typeno</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

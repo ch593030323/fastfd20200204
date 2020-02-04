@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_cloudsync_cloud2</class>
+ <widget class="QDialog" name="w_sys_manage_cloudsync_cloud2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>347</width>
+    <height>347</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_host">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>host
+www.yqspos.com</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_machine_id">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>machine_id
+4567498746479</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_saas_type">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>SaaS_version
+Normal</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_check_data_updownload">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>是否启动数据同步</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_check_yun_member">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>使用云会员</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="public_pushbuton_left_right" name="pushButton_check_local_member">
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>使用云会员时，不再使用本地会员</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="lds_toolbar_button" name="pushButton_data_downupload">
+       <property name="text">
+        <string>数据同步</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="lds_toolbar_button" name="pushButton_data_upload">
+       <property name="text">
+        <string>数据上传</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="lds_toolbar_button" name="pushButton_data_download">
+       <property name="text">
+        <string>数据下载</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="lds_toolbar_button" name="pushButton_flow_upload">
+       <property name="text">
+        <string>流水上传</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="lds_toolbar_button" name="pushButton_timecheck">
+       <property name="text">
+        <string>时间校对</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_left_right</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_left_right.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/">
+        <file>kds/order_cooking.png</file>
+        <file>kds/order_finished.png</file>
+        <file>kds/order_prepare.png</file>
+        <file>kds/order_warning.png</file>
+        <file>kds/order_critical.png</file>
+        <file>kds/order_exit.png</file>
+        <file>kds/order_settings.png</file>
+        <file>kds/order_service.png</file>
+        <file>kds/order_home.png</file>
+        <file>kds/order_back.png</file>
+        <file>kds/order_arrow_down.png</file>
+        <file>kds/order_arrow_up.png</file>
+        <file>kds/order_enter.png</file>
+        <file>kds/order_take.png</file>
+        <file>kds/skin.qss</file>
+        <file>kds/order_done.png</file>
+        <file>kds/order_arrow_down_single.png</file>
+        <file>kds/order_arrow_up_single.png</file>
+        <file>kds/btn_arrow.png</file>
+        <file>kds/button_cancel.png</file>
+        <file>kds/button_cancel2.png</file>
+        <file>kds/button_ok.png</file>
+        <file>kds/button_ok2.png</file>
+    </qresource>
+</RCC>

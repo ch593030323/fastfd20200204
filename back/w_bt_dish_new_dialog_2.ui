@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_new_dialog_2</class>
+ <widget class="QDialog" name="w_bt_dish_new_dialog_2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1620</width>
+    <height>1109</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>780</width>
+     <height>470</height>
+    </rect>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>frame_detail_show</string>
+   </property>
+   <widget class="QFrame" name="frame_basic">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>760</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0,1">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame_icon">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>60</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>160</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="ftableview" name="tableView_pic"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="toolButton_clearpic">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>C</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="toolButton_color">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,1,0,1">
+         <item row="0" column="1" colspan="3">
+          <widget class="lds_lineedit" name="lineEdit_vch_dishname">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_vch_dishname">
+           <property name="text">
+            <string>名称</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_vch_dishname_3">
+           <property name="text">
+            <string>名称2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="3">
+          <widget class="lds_lineedit" name="lineEdit_vch_dishname_2">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_ch_dishno">
+           <property name="text">
+            <string>编码</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_num_price">
+           <property name="text">
+            <string>价格</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="lds_ComboBox" name="comboBox_ch_unitno"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="lds_doublespinbox" name="doubleSpinBox_num_price"/>
+         </item>
+         <item row="3" column="2">
+          <widget class="pushbutton_underline" name="pushButton_ch_unitno">
+           <property name="text">
+            <string>单位</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="lds_ComboBox" name="comboBox_ch_sub_typeno"/>
+         </item>
+         <item row="4" column="2">
+          <widget class="pushbutton_underline" name="pushButton_ch_sub_typeno">
+           <property name="text">
+            <string>小类</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="lds_ComboBox" name="comboBox_ch_dish_typeno"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="pushbutton_underline" name="pushButton_ch_dish_typeno">
+           <property name="text">
+            <string>大类</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_ch_dishno"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_vch_barcode">
+           <property name="text">
+            <string>条码</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="lineEdit_vch_barcode">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>2</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>2</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>line_div_h</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="pushbutton_underline" name="pushButton_rate1">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>税率1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="lds_doublespinbox" name="doubleSpinBox_int_rate">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="suffix">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="lds_CheckBox" name="checkBox_ch_guqing_flag">
+         <property name="text">
+          <string>沽清设置</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="lds_CheckBox" name="checkBox_ch_curprice">
+         <property name="text">
+          <string>时价商品</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="lds_CheckBox" name="checkBox_ch_suitflag">
+         <property name="text">
+          <string>组合商品</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="lds_CheckBox" name="checkBox_ch_serviceflag">
+         <property name="text">
+          <string>收服务费</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_vch_guqing_num">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>沽清量</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="lds_doublespinbox" name="doubleSpinBox_num_guqing_num">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <widget class="lds_CheckBox" name="checkBox_ch_discount">
+         <property name="text">
+          <string>折扣</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="pushbutton_underline" name="pushButton_rate_more">
+         <property name="text">
+          <string>更多</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <layout class="QFormLayout" name="formLayout_4">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="pushbutton_underline" name="pushButton_rate2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>税率2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="lds_doublespinbox" name="doubleSpinBox_int_rate_2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="suffix">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="1">
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="1">
+          <widget class="lds_doublespinbox" name="doubleSpinBox_int_rate_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="suffix">
+            <string>%</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="pushbutton_underline" name="pushButton_rate3">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>税率3</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+    <zorder>label</zorder>
+    <zorder>verticalSpacer</zorder>
+    <zorder></zorder>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_item_set">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>570</y>
+     <width>760</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_vch_dishname_for_item">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_vch_dishname_2">
+        <property name="text">
+         <string>名称</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_item_news">
+        <property name="text">
+         <string>新增</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_item_del">
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_item_change">
+        <property name="text">
+         <string>修改</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="lds_tableView" name="tableView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_switch">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="lds_toolbar_button" name="pushButton_basic">
+      <property name="text">
+       <string>基本资料</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="lds_toolbar_button" name="pushButton_advanced">
+      <property name="text">
+       <string>其他资料</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="lds_toolbar_button" name="pushButton_item_set">
+      <property name="text">
+       <string>原料设置</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_bottom">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>780</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label_record">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="lds_toolbar" name="toolbar"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_advanced">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>60</y>
+     <width>760</width>
+     <height>450</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>741</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_4">
+     <item row="0" column="3">
+      <widget class="QLineEdit" name="lineEdit_ch_groupno"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="lds_doublespinbox" name="doubleSpinBox_num_m_price"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_vch_spell">
+       <property name="text">
+        <string>拼音简码</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="pushbutton_underline" name="pushButton_ch_groupno">
+       <property name="text">
+        <string>组号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_vch_spell"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_num_m_price">
+       <property name="text">
+        <string>会员特价1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>110</y>
+      <width>741</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,0,0,0" columnstretch="0,0,0,1,0,1">
+     <item row="0" column="2">
+      <widget class="pushbutton_underline" name="pushButton_vch_pur_unitno">
+       <property name="text">
+        <string>采购单位</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" rowspan="2">
+      <widget class="lds_CheckBox" name="checkBox_item_flag">
+       <property name="text">
+        <string>库存管理</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" rowspan="2">
+      <widget class="lds_CheckBox" name="checkBox_ch_deductflag">
+       <property name="text">
+        <string>服务提成</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="lds_doublespinbox" name="spinBox_num_sale_price">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="lds_ComboBox" name="comboBox_vch_pur_unitno">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>提成方式</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QLabel" name="label_int_unit_rate">
+       <property name="text">
+        <string>大小包装比率</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>库存预警下线</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>提成定额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="lds_spinbox" name="spinBox_int_deduct">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>提成比率</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="lds_ComboBox" name="comboBox_ch_deducttype">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="lds_doublespinbox" name="spinBox_num_deduct">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="lds_spinbox" name="spinBox_int_unit_rate">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="suffix">
+        <string/>
+       </property>
+       <property name="prefix">
+        <string>1:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>采购价</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="lds_doublespinbox" name="spinBox_num_item_warn">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" rowspan="2">
+      <widget class="QLabel" name="label_3">
+       <property name="minimumSize">
+        <size>
+         <width>2</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>label_div</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1" rowspan="2">
+      <widget class="QLabel" name="label_4">
+       <property name="minimumSize">
+        <size>
+         <width>2</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>label_div</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_lowflag">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>计入低消</string>
+    </property>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_stopflag">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>280</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停用</string>
+    </property>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_off">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>279</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>常用商品</string>
+    </property>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_tempflag">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>280</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>临时商品</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_weight">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>310</y>
+      <width>331</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,0,0,0,1">
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="lds_checkbox_unwrap" name="checkBox_ch_weight">
+       <property name="text">
+        <string>可称重</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_checkbox_unwrap" name="checkBox_ch_count">
+       <property name="text">
+        <string>计数称重</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_doublespinbox" name="doubleSpinBox_num_count_weight"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_count_weight_unit"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_material_flag">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>是否原料</string>
+    </property>
+   </widget>
+   <widget class="lds_CheckBox" name="checkBox_ch_addon_flag">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>230</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>加料加价</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_loading">
+   <property name="geometry">
+    <rect>
+     <x>850</x>
+     <y>590</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>lds_doublespinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>lds_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_lineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_spinbox</class>
+   <extends>QSpinBox</extends>
+   <header>lds_spinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_checkbox_unwrap</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox_unwrap.h</header>
+  </customwidget>
+  <customwidget>
+   <class>pushbutton_underline</class>
+   <extends>QPushButton</extends>
+   <header>pushbutton_underline.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

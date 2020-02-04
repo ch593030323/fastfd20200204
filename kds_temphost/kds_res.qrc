@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/kds">
+        <file>image/dialog-apply.png</file>
+        <file>image/edit-delete.png</file>
+        <file>image/error.png</file>
+        <file>image/error-round.png</file>
+        <file>image/important-red.png</file>
+        <file>image/list-add.png</file>
+        <file>image/list-remove.png</file>
+        <file>image/notice.png</file>
+        <file>image/process-stop.png</file>
+        <file>image/question.png</file>
+        <file>image/window-close.png</file>
+        <file>image/fastfd_skyblue.qss</file>
+        <file>image/hddpos_kds.sql</file>
+    </qresource>
+</RCC>

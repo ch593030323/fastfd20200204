@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>saas_guide_direct</class>
+ <widget class="QWidget" name="saas_guide_direct">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1600</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>60</y>
+     <width>531</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#7f6496;
+font-size:15pt;
+color:white;
+</string>
+      </property>
+      <property name="text">
+       <string>摇钱数餐饮SaaS专业版</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget_2">
+      <property name="styleSheet">
+       <string notr="true">
+QTableView,
+QStandardItem{
+border:0px;
+gridline-color:#7f6496;
+}</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>套餐商品可以等价或加价替换</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>支持区域厨打、一菜多吃分单打印</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>支持强大的连锁云会员及微会员</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>强大实用的会员储值、积分及兑换功能</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>支持点菜宝以及平板、手机点餐</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>支持商品沽清、时价菜、临时菜</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>可以管理服务费及员工业绩提成</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>精准的原料库存管理</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>支持多达16种语言</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>可一键切换语言和快速选择小票格式、语言</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>快餐支持手牌号及来电弹屏功能</string>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string>酒吧、西餐的地图模式</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>各类丰富的促销策略</string>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string>更强大便捷的云端连锁功能</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>531</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QRadioButton{
+color:white;
+font:bold;
+min-height:40px;
+}
+
+QRadioButton:indicator{
+width:0px;
+}
+
+QRadioButton:checked{
+background:#ff546b;
+}
+
+QRadioButton:unchecked{
+background:gray;
+}</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>标准版</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>0</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>专业版</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>0</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>详细</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>531</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#2bb7cc;
+font-size:15pt;
+color:white;</string>
+      </property>
+      <property name="text">
+       <string>摇钱数餐饮SaaS标准版</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true">QTableView,
+QStandardItem{
+border:0px;
+gridline-color:#2bb7cc;
+}</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>New Row</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>摇钱数SaaS餐饮系统标准版主要优点</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>支持奶茶标签打印</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>支持前台秤重</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>支持商品口味及加料加价功能</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>永不丢单的厨打和出品管理</string>
+       </property>
+      </item>
+      <item row="2" column="0">
+       <property name="text">
+        <string>支持支付宝、微信等多种付款方式</string>
+       </property>
+      </item>
+      <item row="2" column="1">
+       <property name="text">
+        <string>有中餐、快餐、西餐和酒吧模式</string>
+       </property>
+      </item>
+      <item row="3" column="0">
+       <property name="text">
+        <string>强大的会员管理功能</string>
+       </property>
+      </item>
+      <item row="3" column="1">
+       <property name="text">
+        <string>支持折扣、优惠和退货模式</string>
+       </property>
+      </item>
+      <item row="4" column="0">
+       <property name="text">
+        <string>模块化的员工登录查看、管理权限</string>
+       </property>
+      </item>
+      <item row="4" column="1">
+       <property name="text">
+        <string>后台各类综合报表</string>
+       </property>
+      </item>
+      <item row="5" column="0">
+       <property name="text">
+        <string>多重数据自动备份策略</string>
+       </property>
+      </item>
+      <item row="5" column="1">
+       <property name="text">
+        <string>云端资料与终端实时同步</string>
+       </property>
+      </item>
+      <item row="6" column="0">
+       <property name="text">
+        <string>手机报表，随时随地了解营业状况</string>
+       </property>
+      </item>
+      <item row="6" column="1">
+       <property name="text">
+        <string>强大的摇钱数云端多店连锁</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>60</y>
+     <width>531</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_5">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:#9bbb59;
+font-size:15pt;
+color:white;
+</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,0">
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>详细</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_s3_up">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/widgets_pic/pushbutton_up.png</normaloff>:/image/widgets_pic/pushbutton_up.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_s3_down">
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../res.qrc">
+           <normaloff>:/image/widgets_pic/pushbutton_down.png</normaloff>:/image/widgets_pic/pushbutton_down.png</iconset>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget_5">
+      <property name="styleSheet">
+       <string notr="true">
+QTableView,
+QStandardItem{
+border:0px;
+gridline-color:#9bbb59;
+}</string>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>New Column</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>New Column</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string/>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

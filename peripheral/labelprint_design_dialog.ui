@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>labelprint_design_dialog</class>
+ <widget class="QWidget" name="labelprint_design_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>490</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="outer_stylesheet" stdset="0">
+   <string>dialog_hasborder</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>635</width>
+            <height>406</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="S_MainWindow" name="widget" native="true">
+             <property name="styleSheet">
+              <string notr="true">QLabel{color:black;}
+QCheckBox{color:black;}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="labelprint_set_tagbarcode_dialog" name="page_2">
+      <layout class="QVBoxLayout" name="verticalLayout_4"/>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0,0,0,0,0,0">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>测试只会打印一条数据</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button_nowrap" name="pushButton_test">
+       <property name="text">
+        <string>测试</string>
+       </property>
+       <property name="icon">
+        <iconset resource="peripheral.qrc">
+         <normaloff>:/image/test.png</normaloff>:/image/test.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button_nowrap" name="pushButton_switch">
+       <property name="text">
+        <string>switch</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button_nowrap" name="pushButton_savebill">
+       <property name="text">
+        <string>表单保存</string>
+       </property>
+       <property name="icon">
+        <iconset resource="peripheral.qrc">
+         <normaloff>:/image/billsave.png</normaloff>:/image/billsave.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button_nowrap" name="pushButton_importbill">
+       <property name="text">
+        <string>表单导入</string>
+       </property>
+       <property name="icon">
+        <iconset resource="peripheral.qrc">
+         <normaloff>:/image/billimport.png</normaloff>:/image/billimport.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button_nowrap" name="pushButton_defbill">
+       <property name="text">
+        <string>表单初始</string>
+       </property>
+       <property name="icon">
+        <iconset resource="peripheral.qrc">
+         <normaloff>:/image/billinit.png</normaloff>:/image/billinit.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button_nowrap</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button_nowrap.h</header>
+  </customwidget>
+  <customwidget>
+   <class>S_MainWindow</class>
+   <extends>QWidget</extends>
+   <header>s_mainwindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>labelprint_set_tagbarcode_dialog</class>
+   <extends>QWidget</extends>
+   <header>labelprint_set_tagbarcode_dialog.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="peripheral.qrc"/>
+ </resources>
+ <connections/>
+</ui>

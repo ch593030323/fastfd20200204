@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_restaurant_preorder_add_Dialog</class>
+ <widget class="QDialog" name="w_scr_dish_restaurant_preorder_add_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>782</width>
+    <height>457</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,0">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="lds_datetimeEdit" name="dateTimeEdit_dt_come"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>操作员</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>预警提前时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>订单号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="lds_lineedit" name="lineEdit_vch_tel_second"/>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>备用电话</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="lds_lineedit" name="lineEdit_vch_tel"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>人数</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>预到时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="lds_ComboBox" name="comboBox_vch_operid">
+       <property name="editable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="lds_lineedit" name="lineEdit_vch_memo"/>
+     </item>
+     <item row="13" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>预订人(*)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="lds_lineedit" name="lineEdit_vch_booker"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="lds_lineedit" name="lineEdit_int_person"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="lineEdit_ch_bookno"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>备注</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="lds_toolbar_button" name="pushButton_member">
+       <property name="text">
+        <string>会员</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>联系电话(*)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QLabel" name="label_5">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>2</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>2</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>line_div_h</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="pushButton_int_overtime">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>最大翻台时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="spinBox_int_overtime">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="suffix">
+        <string>分</string>
+       </property>
+       <property name="maximum">
+        <number>9999</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>预警时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="lds_datetimeEdit" name="dateTimeEdit_dt_warn"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="spinBox_warn_diff">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="suffix">
+        <string>分</string>
+       </property>
+       <property name="maximum">
+        <number>999</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="restaurantTableView" name="tableView_table"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_tabledesc">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="ftableview" name="tableView_tabletype"/>
+     </item>
+     <item>
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_ok">
+       <property name="text">
+        <string>确定</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_datetimeEdit</class>
+   <extends>QDateTimeEdit</extends>
+   <header>lds_datetimeedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_lineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>restaurantTableView</class>
+   <extends>QTableView</extends>
+   <header>restauranttableview.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>lineEdit_int_person</tabstop>
+  <tabstop>lineEdit_vch_tel_second</tabstop>
+  <tabstop>dateTimeEdit_dt_come</tabstop>
+  <tabstop>lineEdit_vch_tel</tabstop>
+  <tabstop>lineEdit_vch_booker</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

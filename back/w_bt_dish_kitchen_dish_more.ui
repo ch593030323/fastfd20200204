@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_kitchen_dish_more</class>
+ <widget class="QDialog" name="w_bt_dish_kitchen_dish_more">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>205</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,1,0,1">
+     <item row="0" column="0" colspan="4">
+      <widget class="QLabel" name="label_desc">
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QCheckBox" name="checkBox_ch_kitchen_print_flag">
+       <property name="text">
+        <string>是否厨打</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QCheckBox" name="checkBox_ch_kitchen_out_flag">
+       <property name="text">
+        <string>是否出品</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>厨打方案1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_print_id1"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>出品方案1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_out_id1"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>厨打方案2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_print_id2"/>
+     </item>
+     <item row="3" column="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>出品方案2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_out_id2"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>厨打方案3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_print_id3"/>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>出品方案3</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="lds_ComboBox" name="comboBox_vch_kitchen_out_id3"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_ok">
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

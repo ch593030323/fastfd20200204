@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>labelprint_set_dialog</class>
+ <widget class="QWidget" name="labelprint_set_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>469</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="outer_stylesheet" stdset="0">
+   <string>dialog_hasborder</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="9" column="1" colspan="3">
+    <widget class="QSpinBox" name="spinBox_line_max_chars">
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1" colspan="3">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_printtype">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QSpinBox" name="spinBox_darkness">
+     <property name="value">
+      <number>8</number>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QLabel" name="label_28">
+     <property name="maximumSize">
+      <size>
+       <width>10</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size:20pt;</string>
+     </property>
+     <property name="text">
+      <string>:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_10">
+     <property name="text">
+      <string>类型</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="0">
+    <widget class="QLabel" name="label_34">
+     <property name="text">
+      <string>text</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QSpinBox" name="spinBox_wide">
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1" colspan="3">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_font">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1" colspan="3">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_printpath">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1" colspan="6">
+    <widget class="Line" name="line_5">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0">
+    <widget class="lds_toolbar_button_nowrap" name="pushButton_labelprint_test">
+     <property name="text">
+      <string>测试</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_26">
+     <property name="text">
+      <string>条码宽窄比</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="12" column="4">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_32">
+     <property name="text">
+      <string>波特率</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="6">
+    <widget class="QLabel" name="label">
+     <property name="styleSheet">
+      <string notr="true">color:#ff546b;</string>
+     </property>
+     <property name="text">
+      <string>佳博GP-3150TIN支持网口打印,可在通讯方式里选择;端口选择手动输入[192.168.123.100:9100]格式的ip:port</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1" colspan="3">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_onebartype"/>
+   </item>
+   <item row="11" column="1" colspan="3">
+    <widget class="QLineEdit" name="lineEdit_labelprint_test_text">
+     <property name="text">
+      <string>ABC123你好</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_19">
+     <property name="text">
+      <string>一维码类型</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="label_20">
+     <property name="text">
+      <string>字体类型</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="5">
+    <widget class="QLineEdit" name="lineEdit_labelprint_test_barcode">
+     <property name="text">
+      <string>123456789</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1" colspan="6">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QLabel" name="label_31">
+     <property name="text">
+      <string>通信方式</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QSpinBox" name="spinBox_narrow">
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="value">
+      <number>2</number>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="QLabel" name="label_darkness">
+     <property name="text">
+      <string>打印浓度</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_18">
+     <property name="text">
+      <string>端口选择</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="11" column="4">
+    <widget class="QLabel" name="label_35">
+     <property name="text">
+      <string>barcode</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="0">
+    <widget class="QLabel" name="label_21">
+     <property name="text">
+      <string>最大字符数</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_printpathtype">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="3">
+    <widget class="lds_ComboBox" name="comboBox_labelprint_baudrate"/>
+   </item>
+   <item row="3" column="4" colspan="2">
+    <widget class="lds_toolbar_button_nowrap" name="pushButton_labelprint_vidpid">
+     <property name="text">
+      <string>VIDPID</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="5">
+    <widget class="Line" name="line_6">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="5">
+    <widget class="QSpinBox" name="spinBox_line_char_height">
+     <property name="minimum">
+      <number>-1</number>
+     </property>
+     <property name="value">
+      <number>-1</number>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="4">
+    <widget class="QLabel" name="label_23">
+     <property name="text">
+      <string>字符高度</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0">
+    <widget class="lds_toolbar_button_nowrap" name="pushButton_labelprint_test_2">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>用于换行</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="lds_toolbar_button_nowrap" name="pushButton_labelprint_test_3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>标价签打印机</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button_nowrap</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button_nowrap.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

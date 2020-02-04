@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_num_cook_Dialog</class>
+ <widget class="QDialog" name="w_scr_dish_num_cook_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>修改</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,1">
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="outer_stylesheet" stdset="0">
+        <string>frame_detail_show</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="3">
+         <widget class="lds_toolbar_button" name="pushButton_more">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="text">
+           <string>?</string>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>pushbutton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2" colspan="2">
+         <widget class="lds_spinbox" name="spinBox_int_discount">
+          <property name="suffix">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2" colspan="2">
+         <widget class="lds_doublespinbox" name="doubleSpinBox_num_price"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>折扣</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>数量</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="2">
+         <widget class="lds_doublespinbox" name="doubleSpinBox_num_num"/>
+        </item>
+        <item row="0" column="1" rowspan="5">
+         <widget class="QLabel" name="label_div">
+          <property name="minimumSize">
+           <size>
+            <width>2</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>2</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>line_div_h</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_group">
+          <property name="text">
+           <string>商品</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>价格</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QToolButton" name="toolButton_vch_operID">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../res.qrc">
+            <normaloff>:/image/42.png</normaloff>:/image/42.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="lds_lineedit" name="lineEdit_vch_dishname"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>操作员</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="lds_lineedit" name="lineEdit_vch_operID"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_key3x4" name="widget_key3x4" native="true"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="lds_toolbar_button" name="pushButton_tab_cook">
+         <property name="text">
+          <string>做法</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="outer_stylesheet" stdset="0">
+          <string>pushbutton_dish</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="lds_toolbar_button" name="pushButton_tab_addon">
+         <property name="text">
+          <string>加料加价</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="outer_stylesheet" stdset="0">
+          <string>pushbutton_dish</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="ftableview" name="frame_cook"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_clearcook">
+       <property name="text">
+        <string>清除做法</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_cookset">
+       <property name="text">
+        <string>自定义做法</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_take_weight">
+       <property name="text">
+        <string>取重</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="public_pushbuton_rt_check" name="pushButton_present">
+       <property name="text">
+        <string>赠送</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_ok">
+       <property name="text">
+        <string>确定</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_spinbox</class>
+   <extends>QSpinBox</extends>
+   <header>lds_spinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>lds_doublespinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_lineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_rt_check</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_rt_check.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_key3x4</class>
+   <extends>QWidget</extends>
+   <header>lds_key3x4.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>lineEdit_vch_dishname</tabstop>
+  <tabstop>doubleSpinBox_num_num</tabstop>
+  <tabstop>doubleSpinBox_num_price</tabstop>
+  <tabstop>spinBox_int_discount</tabstop>
+  <tabstop>pushButton_take_weight</tabstop>
+  <tabstop>pushButton_present</tabstop>
+  <tabstop>pushButton_ok</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+  <tabstop>pushButton_clearcook</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

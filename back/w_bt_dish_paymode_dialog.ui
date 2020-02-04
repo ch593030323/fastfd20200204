@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_paymode_dialog</class>
+ <widget class="QDialog" name="w_bt_dish_paymode_dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>675</width>
+    <height>460</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0">
+     <item>
+      <widget class="lds_tableView" name="tableView"/>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_2">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>frame_detail_show</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,1">
+        <item>
+         <widget class="QFrame" name="frame">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="4">
+            <widget class="QLineEdit" name="lineEdit_ch_paymodeno"/>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLineEdit" name="lineEdit_vch_paymodename"/>
+           </item>
+           <item row="3" column="4">
+            <widget class="QLineEdit" name="lineEdit_ch_key"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="lds_colorlabel" name="label_vch_arg4">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:gray;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="4">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>收银名称</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="5">
+            <widget class="lds_CheckBox" name="checkBox_ch_idflag">
+             <property name="text">
+              <string>是否有编号</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0" colspan="5">
+            <widget class="lds_CheckBox" name="checkBox_ch_faceflag">
+             <property name="text">
+              <string>是否有面额</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0" colspan="5">
+            <widget class="lds_CheckBox" name="checkBox_ch_changeflag">
+             <property name="text">
+              <string>是否找零</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0" colspan="5">
+            <widget class="lds_CheckBox" name="checkBox_ch_incomeflag">
+             <property name="text">
+              <string>是否营业收入</string>
+             </property>
+             <property name="tristate">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1" colspan="3">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>编码</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="4">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>快捷键</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_toolbar_button" name="pushButton_arg">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>参数设置</string>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>pushbutton</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableView_2"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>金额单位</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_unitprefix">
+            <property name="text">
+             <string>￥</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="lds_toolbar" name="widget"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>lds_CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_colorlabel</class>
+   <extends>QLabel</extends>
+   <header>lds_colorlabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tableView_2</tabstop>
+  <tabstop>lineEdit_ch_paymodeno</tabstop>
+  <tabstop>lineEdit_vch_paymodename</tabstop>
+  <tabstop>lineEdit_ch_key</tabstop>
+  <tabstop>checkBox_ch_idflag</tabstop>
+  <tabstop>checkBox_ch_faceflag</tabstop>
+  <tabstop>checkBox_ch_changeflag</tabstop>
+  <tabstop>checkBox_ch_incomeflag</tabstop>
+  <tabstop>pushButton_arg</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>lineEdit_unitprefix</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

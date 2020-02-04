@@ -1,0 +1,98 @@
+/*正常按钮*/
+QPushButton[outer_stylesheet="pushbutton"]{
+/*橙色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #ff7d91,
+stop:0.5 #ff7d91,
+stop:0.51 #ff546b
+stop:1 #ff546b
+);
+border:0px;
+color: white;
+}
+QPushButton[outer_stylesheet="pushbutton"]:checked,
+QPushButton[outer_stylesheet="pushbutton"]:pressed,
+QToolButton[outer_stylesheet="pushbutton"]:pressed{
+/*黄色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #ffef8b,
+stop:0.5 #ffef8b,
+stop:0.51 #ffdc1a
+stop:1 #ffdc1a
+);
+}
+QDialog{
+background-color:#383838;
+}
+QLabel,
+QCheckBox{
+color:white;
+border:0px;
+}
+QLineEdit{
+border:0px;
+}
+
+QCheckBox{
+color:white;
+background-color:transparent;
+}
+QGroupBox{
+font-size:14pt;
+}
+QCheckBox::indicator:checked,
+QGroupBox::indicator:checked {
+image: url(:/image/widgets_pic/check_on.png);
+}
+
+QCheckBox::indicator:unchecked,
+QGroupBox::indicator:unchecked {
+image: url(:/image/widgets_pic/check_off.png);
+}
+QCheckBox::indicator:checked:!enabled,
+QGroupBox::indicator:checked:!enabled {
+image: url(:/image/widgets_pic/disable_check_on.png);
+}
+
+QCheckBox::indicator:unchecked:!enabled ,
+QGroupBox::indicator:unchecked:!enabled{
+image: url(:/image/widgets_pic/disable_check_off.png);
+}
+
+QCheckBox::indicator {
+width: 25px;
+height: 25px;
+}
+
+QPushButton[outer_stylesheet="pushbutton"]:disabled
+{
+/*灰色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #aaaaaa,
+stop:0.5 #aaaaaa,
+stop:0.51 #787878
+stop:1 #787878
+);
+}
+QDialog[outer_stylesheet="lds_roundeddialog_rect_align"],
+QDialog[outer_stylesheet="lds_roundeddialog_rect"]{
+qproperty-titleColor:hsv(0,0,43);
+qproperty-bgColor:rgba(245, 245, 245,80);
+}
+QLabel[outer_stylesheet="lds_roundeddialog_rect_align"]{
+background:rgba(245, 245, 245,80);
+}
+QPushButton[outer_stylesheet="pushbutton_check"],
+QPushButton[outer_stylesheet="pushbutton_check"]:pressed{
+color:white;
+border:1px solid #282828;
+}
+QTableView[outer_stylesheet = "tableView_type"]{
+    border:0;
+    background:transparent;
+    selection-background-color: transparent;
+
+    qproperty-bgNormalColor10:hsv(0,0,43);
+    qproperty-textColor:white;
+    qproperty-bgBorderColor:transparent;
+}

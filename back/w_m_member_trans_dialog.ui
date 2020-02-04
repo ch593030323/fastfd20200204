@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_trans_Dialog</class>
+ <widget class="QDialog" name="w_m_member_trans_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>306</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="2" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_newvipno"/>
+     </item>
+     <item row="6" column="5">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_newpoint">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="6">
+      <widget class="QLabel" name="label_13">
+       <property name="styleSheet">
+        <string notr="true">color:#ff546b;</string>
+       </property>
+       <property name="text">
+        <string>操作</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0" colspan="2">
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>转新卡金额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>当前余额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string>当前积分</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>会员名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_oldvipno">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="6">
+      <widget class="QLabel" name="label_8">
+       <property name="styleSheet">
+        <string notr="true">color:#ff546b;</string>
+       </property>
+       <property name="text">
+        <string>补发新卡信息,请输入新卡卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_oldpoint">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_newcardno"/>
+     </item>
+     <item row="1" column="5">
+      <widget class="QLineEdit" name="lineEdit_oldvipname">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>会员卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2" colspan="2">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_newamount">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QLineEdit" name="lineEdit_newvipname">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2" colspan="2">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_oldamount">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>会员卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>卡面卡号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>当前金额</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>会员名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>当前积分</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2" colspan="2">
+      <widget class="lds_doublespinbox_lineedit" name="lineEdit_tonewnum">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="6">
+      <widget class="QLabel" name="label_2">
+       <property name="styleSheet">
+        <string notr="true">color:#ff546b;</string>
+       </property>
+       <property name="text">
+        <string>原挂失卡信息</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5">
+      <widget class="QCheckBox" name="checkBox_istonewyajin">
+       <property name="text">
+        <string>是否转移旧卡押金</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="lds_toolbar" name="widget"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_doublespinbox_lineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

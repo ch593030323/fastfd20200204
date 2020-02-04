@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fastfd.ico</file>
+        <file>fastfd.png</file>
+        <file>settings.png</file>
+    </qresource>
+</RCC>

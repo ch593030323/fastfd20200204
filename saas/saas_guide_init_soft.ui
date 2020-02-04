@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>saas_guide_init_soft</class>
+ <widget class="QWidget" name="saas_guide_init_soft">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#pushButton_connect_MySQL,
+QPushButton#pushButton_demo,
+QPushButton#pushButton_labelprint,
+QPushButton#pushButton_reciept,
+QPushButton#pushButton_screen{
+color:#ff546b;
+}</string>
+  </property>
+  <widget class="public_pushbutton_machine" name="pushButton_screen">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>客显/副屏设置</string>
+   </property>
+  </widget>
+  <widget class="public_pushbutton_machine" name="pushButton_labelprint">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>标签打印机设置</string>
+   </property>
+  </widget>
+  <widget class="public_pushbutton_machine" name="pushButton_connect_MySQL">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>连接数据库</string>
+   </property>
+  </widget>
+  <widget class="public_pushbutton_machine" name="pushButton_demo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>导入演示用例</string>
+   </property>
+  </widget>
+  <widget class="public_pushbutton_machine" name="pushButton_reciept">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>结账打印机设置</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>510</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#ff546b;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>481</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20pt;</string>
+   </property>
+   <property name="text">
+    <string>初始化</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>public_pushbutton_machine</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbutton_machine.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_list_recharge_Dialog</class>
+ <widget class="QDialog" name="w_m_member_list_recharge_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>705</width>
+    <height>233</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="outer_stylesheet" stdset="0">
+      <string>frame_detail_show</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0" colspan="2">
+       <widget class="QLabel" name="label_num_realamount_t">
+        <property name="text">
+         <string>实收金额</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3" colspan="2">
+       <widget class="QLabel" name="label_num_deposit_t">
+        <property name="text">
+         <string>充值金额</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="label_remain_t">
+        <property name="text">
+         <string>卡面余额</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="QLabel" name="label_amount_t">
+        <property name="text">
+         <string>充后面额</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="lds_doublespinbox_lineedit" name="lineEdit_remain"/>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="label_vch_memo_t">
+        <property name="text">
+         <string>备注信息</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="lds_doublespinbox_lineedit" name="lineEdit_amount"/>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="lineEdit_vch_memberno"/>
+      </item>
+      <item row="0" column="3" colspan="2">
+       <widget class="QLabel" name="label_vch_member_t">
+        <property name="text">
+         <string>会员名称</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLineEdit" name="lineEdit_vch_member"/>
+      </item>
+      <item row="2" column="6">
+       <widget class="lds_pushbutton" name="pushButton_200">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>200</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="lds_pushbutton" name="pushButton_100">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>100</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_vch_memberno_t">
+        <property name="text">
+         <string>会员编号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="lineEdit_vch_memo"/>
+      </item>
+      <item row="4" column="5">
+       <widget class="lds_ComboBox" name="comboBox_ch_pay_mode"/>
+      </item>
+      <item row="4" column="3" colspan="2">
+       <widget class="QLabel" name="label_ch_pay_mode_t">
+        <property name="text">
+         <string>支付方式</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLineEdit" name="lineEdit_operdate"/>
+      </item>
+      <item row="3" column="3" colspan="2">
+       <widget class="QLabel" name="label_operdate_t">
+        <property name="text">
+         <string>充值时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="lineEdit_vch_operid"/>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QLabel" name="label_vch_operid_t">
+        <property name="text">
+         <string>操作人员</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="6">
+       <widget class="lds_pushbutton" name="pushButton_500">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>500</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="lds_pushbutton" name="pushButton_1000">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="lds_pushbutton" name="pushButton_50">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="focusPolicy">
+         <enum>Qt::NoFocus</enum>
+        </property>
+        <property name="text">
+         <string>50</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="lds_doublespinbox" name="lineEdit_num_realamount"/>
+      </item>
+      <item row="1" column="5">
+       <widget class="lds_doublespinbox" name="lineEdit_num_deposit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>打印凭证</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_2">
+       <property name="text">
+        <string>充值后开启钱箱</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_print">
+       <property name="text">
+        <string>余额打印</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_read">
+       <property name="text">
+        <string>读卡</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_repay">
+       <property name="text">
+        <string>充值</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox_lineedit</class>
+   <extends>QLineEdit</extends>
+   <header>lds_doublespinbox_lineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>lds_doublespinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_pushbutton</class>
+   <extends>QPushButton</extends>
+   <header>lds_pushbutton.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>lineEdit_num_realamount</tabstop>
+  <tabstop>lineEdit_num_deposit</tabstop>
+  <tabstop>lineEdit_vch_memberno</tabstop>
+  <tabstop>lineEdit_vch_member</tabstop>
+  <tabstop>lineEdit_vch_memo</tabstop>
+  <tabstop>comboBox_ch_pay_mode</tabstop>
+  <tabstop>lineEdit_operdate</tabstop>
+  <tabstop>lineEdit_vch_operid</tabstop>
+  <tabstop>lineEdit_remain</tabstop>
+  <tabstop>lineEdit_amount</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>pushButton_print</tabstop>
+  <tabstop>pushButton_read</tabstop>
+  <tabstop>pushButton_repay</tabstop>
+  <tabstop>pushButton_exit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

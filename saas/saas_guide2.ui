@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>saas_guide2</class>
+ <widget class="QDialog" name="saas_guide2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1687</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="lds_toolbar_button" name="pushButton_pre">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>430</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;&lt;</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="saas_guide2_house" name="frame_cur">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>550</width>
+     <height>410</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="saas_guide2_house" name="frame_right">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>10</y>
+     <width>550</width>
+     <height>410</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_next">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>430</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下一步</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="saas_guide2_house" name="frame_left">
+   <property name="geometry">
+    <rect>
+     <x>-550</x>
+     <y>10</y>
+     <width>550</width>
+     <height>410</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_hardTest">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>430</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>硬件检测</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_exit">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>430</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>saas_guide2_house</class>
+   <extends>QFrame</extends>
+   <header>saas_guide2_house.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

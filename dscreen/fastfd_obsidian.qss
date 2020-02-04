@@ -1,0 +1,737 @@
+/*======================================qtoolbutton的按钮若是有弹窗的，是不需要带背景色的====================================*/
+QPushButton:flat{color:white;}
+QToolButton{background:transparent;}
+
+QToolButton:pressed{background:transparent;}
+QSpinBox,QDoubleSpinBox
+{border:0;}
+QSpinBox::up-button,
+QSpinBox::down-button{
+width:0px;
+}
+QDoubleSpinBox::up-button, 
+QDoubleSpinBox::down-button{
+width:0px;
+}
+
+/*======================================正常的按钮 begin====================================*/
+/*键盘按钮*/
+*[outer_stylesheet="pushbutton_key"]{
+background-color: #2b2b2b;
+border:1px solid hsv(0,0,43);
+color:white;
+}
+QPushButton[outer_stylesheet="pushbutton_key"]:pressed,
+QPushButton[outer_stylesheet="pushbutton_key"]:default,
+QPushButton[outer_stylesheet="pushbutton_key"]:disabled
+{
+background-color:#ff546b;
+border:0px;
+color:white;
+}
+
+/*正常按钮*/
+*[outer_stylesheet="pushbutton"]{
+/*橙色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #ff7d91,
+stop:0.5 #ff7d91,
+stop:0.51 #ff546b
+stop:1 #ff546b
+);
+border:0px;
+color: white;
+}
+*[outer_stylesheet="pushbutton_blue"]{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #6991ff,
+stop:0.5 #6991ff,
+stop:0.51 #235eff
+stop:1 #235eff
+);
+border:0px;
+color: white;
+}
+QPushButton[outer_stylesheet="pushbutton"]:checked,
+QPushButton[outer_stylesheet="pushbutton"]:pressed,
+QToolButton[outer_stylesheet="pushbutton"]:pressed,
+QPushButton[outer_stylesheet="pushbutton_blue"]:checked,
+QPushButton[outer_stylesheet="pushbutton_blue"]:pressed,
+QToolButton[outer_stylesheet="pushbutton_blue"]:pressed{
+/*黄色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #ffef8b,
+stop:0.5 #ffef8b,
+stop:0.51 #ffdc1a
+stop:1 #ffdc1a
+);
+}
+*[outer_stylesheet="pushbutton"]:disabled,
+*[outer_stylesheet="pushbutton_blue"]:disabled
+{
+/*灰色*/
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #aaaaaa,
+stop:0.5 #aaaaaa,
+stop:0.51 #787878
+stop:1 #787878
+);
+}
+
+/*品红渐变*/
+QPushButton[outer_stylesheet="pushbutton_red"]{
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop:0 white, stop:1  red);
+border:1px solid #ccc7c5;
+color:white;
+font-size:15t;
+}
+QPushButton[outer_stylesheet="pushbutton_red"]:disabled,
+QPushButton[outer_stylesheet="pushbutton_red"]:pressed,
+QPushButton[outer_stylesheet="pushbutton_red"]:default{
+background-color:#fd624a;
+border:0px;
+}
+/* 黄色平铺*/
+QPushButton[outer_stylesheet="pushbutton_plain_yellow"]{
+background-color:#f7c76a;
+border:1px;
+color:white;
+font-size:8pt;
+}
+QPushButton[outer_stylesheet="pushbutton_plain_yellow"]:pressed{
+background-color:rgba(255, 0, 57, 255);
+border:1px;
+}
+/*按钮向上的*/
+QPushButton[outer_stylesheet="pushbutton_up"]{
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop:1 hsv(0,0,43));
+border:0px;
+background-image: url(:/image/widgets_pic/pushbutton_up.png);
+background-repeat: no-repeat;
+background-position:center;
+}
+QPushButton[outer_stylesheet="pushbutton_up"]:pressed{
+background-image: url(:/image/widgets_pic/pushbutton_up_pressed.png);
+}
+QPushButton[outer_stylesheet="pushbutton_up"]:disabled{
+background-image: url(:/image/widgets_pic/pushbutton_up_disabled.png);
+}
+/*按钮向下的*/
+QPushButton[outer_stylesheet="pushbutton_down"]{
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop:1 hsv(0,0,43));
+border:0px;
+background-image: url(:/image/widgets_pic/pushbutton_down.png);
+background-repeat: no-repeat;
+background-position:center;
+}
+QPushButton[outer_stylesheet="pushbutton_down"]:pressed{
+background-image: url(:/image/widgets_pic/pushbutton_down_pressed.png);
+}
+QPushButton[outer_stylesheet="pushbutton_down"]:disabled{
+background-image: url(:/image/widgets_pic/pushbutton_down_disabled.png);
+}
+QPushButton::menu-indicator{image:None;width:0px;}
+/*======================================正常的按钮 end====================================*/
+QTabWidget{
+background-color:transparent;
+font:bold;
+}
+QTabWidget QTabBar::tab{
+height:30px;
+background-color:transparent;
+color:white;
+}
+
+QTabWidget QTabBar::tab:selected{
+background-color:transparent;
+color:#ff546b;
+}
+QTabWidget::pane { /* The tab widget frame */
+    border-top: 2px solid #ff546b;
+}
+
+QStatusBar{
+color:white;
+background-color:hsv(0,0,43);
+}
+QMessageBox QLabel{
+color:white;
+}
+QLabel{
+color:white;
+background-color:transparent;
+}
+QLabel[outer_stylesheet="label_blue"]{
+color:#ff546b;
+}
+QLineEdit:!enabled,
+QTimeEdit:!enabled{
+background-color:transparent;
+color:#ff546b;
+font-weight:bold;
+border-style: none;
+}
+
+QLineEdit,QTextEdit{
+border:0px;
+}
+QLineEdit,
+QDoubleSpinBox,
+QSpinBox,
+QComboBox{
+        min-height:25;
+}
+/*======================================QCheckBox  QRadioButton QGroupBox::indicator begin====================================*/
+
+QCheckBox{
+color:white;
+background-color:transparent;
+}
+QGroupBox{
+color:#ff546b;
+font-size:14pt;
+}
+QCheckBox::indicator:checked,
+QGroupBox::indicator:checked {
+image: url(:/image/widgets_pic/check_on.png);
+}
+
+QCheckBox::indicator:unchecked,
+QGroupBox::indicator:unchecked {
+image: url(:/image/widgets_pic/check_off.png);
+}
+QCheckBox::indicator:checked:!enabled,
+QGroupBox::indicator:checked:!enabled {
+image: url(:/image/widgets_pic/disable_check_on.png);
+}
+
+QCheckBox::indicator:unchecked:!enabled ,
+QGroupBox::indicator:unchecked:!enabled{
+image: url(:/image/widgets_pic/disable_check_off.png);
+}
+
+QCheckBox::indicator {
+width: 25px;
+height: 25px;
+}
+/**/
+QRadioButton{
+color:white;
+}
+QRadioButton::indicator:checked {
+image: url(:/image/widgets_pic/radio_on.png);
+}
+
+QRadioButton::indicator:unchecked {
+image: url(:/image/widgets_pic/radio_off.png);
+}
+QRadioButton::indicator:checked:!enabled {
+image: url(:/image/widgets_pic/disable_radio_on.png);
+}
+
+QRadioButton::indicator:unchecked:!enabled {
+image: url(:/image/widgets_pic/disable_radio_off.png);
+}
+QRadioButton::indicator {
+width: 25px;
+height: 25px;
+}
+/*======================================QCheckBox QRadioButton end====================================*/
+/*======================================库存的样式begin====================================*/
+QFrame#inventory:!enabled{
+border:5px solid red;
+}
+/*======================================库存的样式end====================================*/
+
+/*======================================主界面-坐标菜单栏begin====================================*/
+QFrame#backview{
+font-size:12pt;
+/* font-weight: bold;*/
+font-family:”Arial“;
+}
+/*======================================主界面-坐标菜单栏end====================================*/
+
+/*======================================树状图 样式begin====================================*/
+
+QTreeWidget {
+        background-color:gainsboro;
+        alternate-background-color:white;
+        border:0px;
+ }
+ QTreeWidget {
+        show-decoration-selected: 1;
+ }
+
+ QTreeWidget::item {
+        border: 1px solid #d9d9d9;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+ }
+
+/*
+ QTreeWidget::item:selected:active,
+ QTreeWidget::branch:selected:active{
+     background: #ff546b;
+ }
+
+ QTreeWidget::item:selected:!active ,
+ QTreeWidget::branch:selected:!active{
+     background: transparent;
+ }*/
+ QTreeWidget::item:selected,
+ QTreeWidget::branch:selected{
+        background: #ff546b;
+ }
+
+ QTreeWidget::item:!selected ,
+ QTreeWidget::branch:!selected{
+        background: transparent;
+ }
+
+ QTreeWidget::branch:has-siblings:!adjoins-item {
+         border-image: url(:/image/widgets_pic/vline.png) 0;
+ }
+
+ QTreeWidget::branch:has-siblings:adjoins-item {
+         border-image: url(:/image/widgets_pic/branch-more.png) 0;
+ }
+
+ QTreeWidget::branch:!has-children:!has-siblings:adjoins-item {
+         border-image: url(:/image/widgets_pic/branch-end.png) 0;
+ }
+
+ QTreeWidget::branch:has-children:!has-siblings:closed,
+ QTreeWidget::branch:closed:has-children:has-siblings {
+         border-image: none;
+         image: url(:/image/widgets_pic/branch-closed.png);
+ }
+
+ QTreeWidget::branch:open:has-children:!has-siblings,
+ QTreeWidget::branch:open:has-children:has-siblings  {
+         border-image: none;
+         image: url(:/image/widgets_pic/branch-open.png);
+ }
+
+/*======================================树状图 样式end====================================*/
+
+/*======================================前台begin====================================*/
+QLabel[outer_stylesheet="pushbutton_pink"],
+QPushButton[outer_stylesheet="pushbutton_pink"],
+QRadioButton[outer_stylesheet="pushbutton_pink"]{
+background-color:#ff546b;
+border:0px;
+font-size:20pt;
+color:white;
+}
+QPushButton[outer_stylesheet="pushbutton_pink"]:pressed,
+QRadioButton[outer_stylesheet="pushbutton_pink"]:checked
+{background-color:#f7c76a;font:bold;}
+
+QLabel[outer_stylesheet="pushbutton_yellow"],
+QPushButton[outer_stylesheet="pushbutton_yellow"],
+QRadioButton[outer_stylesheet="pushbutton_yellow"]{border-radius:3px;background-color:olivedrab;border:0px;font:14pt;color:white;}
+QPushButton[outer_stylesheet="pushbutton_yellow"]:pressed,
+QRadioButton[outer_stylesheet="pushbutton_yellow"]:checked{background-color:#f7c76a;color:white;}
+
+QPushButton[outer_stylesheet="pushbutton_black"],
+QRadioButton[outer_stylesheet="pushbutton_black"]{border-radius:3px; border:2px solid #dadadb;background-color:#f3f5f5; font:14pt;color:#7b7878;}
+QPushButton[outer_stylesheet="pushbutton_black"]:pressed,
+QRadioButton[outer_stylesheet="pushbutton_black"]:checked{background-color:#f7c76a;color:white;}
+
+QPushButton[outer_stylesheet="pushbutton_bottom"]{
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:0 #535353,
+stop:1 #2b2b2b
+);
+color:white;
+border:1px solid #535353;
+}
+
+QPushButton[outer_stylesheet="pushbutton_bottom"]:disabled,
+QPushButton[outer_stylesheet="pushbutton_bottom"]:checked,
+QPushButton[outer_stylesheet="pushbutton_bottom"]:pressed{
+background-color:#ff546b;
+border-image: none;
+border:0px;
+}
+
+/*-----------------pushbutton_type----------------*/
+QLabel[outer_stylesheet="pushbutton_type"],
+QPushButton[outer_stylesheet="pushbutton_type"],
+QRadioButton[outer_stylesheet="pushbutton_type"],
+QTableView[outer_stylesheet="pushbutton_type"]::item:!selected{
+background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #323232, stop:1 hsv(0,0,43));
+color:white;
+border:1px solid #282828;
+}
+*[outer_stylesheet="pushbutton_type"]:disabled,
+*[outer_stylesheet="pushbutton_type"]:pressed,
+*[outer_stylesheet="pushbutton_type"]:checked,
+QTableView[outer_stylesheet="pushbutton_type"]::item:selected{
+background-color:#ff546b;
+border:0px;
+}
+/*-----------------pushbutton_dish-----------------*/
+QLabel[outer_stylesheet="pushbutton_dish"],
+QPushButton[outer_stylesheet="pushbutton_dish"],
+QRadioButton[outer_stylesheet="pushbutton_dish"]{
+background-color: transparent;
+color:white;
+border:1px solid #282828;
+}
+*[outer_stylesheet="pushbutton_dish"]:disabled,
+*[outer_stylesheet="pushbutton_dish"]:pressed,
+*[outer_stylesheet="pushbutton_dish"]:checked{
+color:white;
+background-color:#ff546b;
+border:0px;
+}
+/*-----------------pushbutton_check----------------*/
+QPushButton[outer_stylesheet="pushbutton_check"],
+QPushButton[outer_stylesheet="pushbutton_check"]:pressed{
+color:white;
+border:1px solid #282828;
+}
+QFrame[outer_stylesheet="frame_detail_show"],
+QFrame#frame_detail_show{
+background-color:rgba(29,29,29,150);
+background-repeat: no-repeat;
+background-position:right top;
+border:2px solid #ff546b;
+border-radius:10px;
+font:12pt;
+}
+QFrame[outer_stylesheet="frame_detail_show"]:!enabled,
+QFrame#frame_detail_show:!enabled{
+border:2px solid gray;
+}
+
+QFrame#frame_login_left{
+border-image: url(:/image/login_left.png);
+}
+QFrame#frame_login_main{
+border-image: url(:/image/login_right.png);
+}
+QDialog#login_Dialog{
+border-image: url(:/image/login_bg.png);
+}
+/*主要用于frame_detail_show和按钮的分割用*/
+QLabel[outer_stylesheet="label_div"]{
+        background-color:#ff546b;
+}
+
+QLabel[outer_stylesheet="line_div_h"]{
+        background-color:#ff546b;
+}
+
+QLabel[outer_stylesheet="label_dish_div"]{
+        background-color:hsv(0,0,43);
+}
+
+QLabel[outer_stylesheet="label_detail"]{
+        color:#ff546b;
+}
+
+QDialog[outer_stylesheet="lds_roundeddialog_rect_align"],
+QDialog[outer_stylesheet="lds_roundeddialog_rect"]{
+qproperty-titleColor:hsv(0,0,43);
+qproperty-bgColor:rgba(245, 245, 245,80);
+}
+QLabel[outer_stylesheet="lds_roundeddialog_rect_align"]{
+background:rgba(245, 245, 245,80);
+}
+QTableView[outer_stylesheet="back_view_tableview"]{
+qproperty-bgColor:transparent;
+qproperty-textColor:white;
+qproperty-borderColor:white;
+}
+/*前台输入框*/
+QLineEdit[outer_stylesheet="lineedit_qt_input"]{
+font:bold 20pt;
+color:#ff546b;
+border:0px;
+background-color:peachpuff;
+}
+/*======================================前台end====================================*/
+
+/*======================================设置打印字体大小begin====================================*/
+QLineEdit[outer_stylesheet="lineedit_printsize"]{border:1px solid orangered;color:orangered;}
+/*======================================设置打印字体大小end====================================*/
+
+/*======================================登录密码和用户名begin====================================*/
+QLineEdit[outer_stylesheet="lineedit_usr"]{
+background-color:rgba(255,255,255,255);
+background-image: url(:/image/widgets_pic/login_usr.png);
+background-repeat: no-repeat;
+
+padding-left:60px;
+border:0px solid gray;
+
+color:white;
+font-size:20pt;
+}
+QLineEdit[outer_stylesheet="lineedit_usr"]:focus{
+color:hsv(0,0,43);
+}
+
+QLineEdit[outer_stylesheet="lineedit_pwd"]{
+background-color:rgba(255,255,255,255);
+background-image: url(:/image/widgets_pic/login_pwd.png);
+background-repeat: no-repeat;
+
+padding-left:60px;
+border:0px solid gray;
+
+color:white;
+font-size:20pt;
+}
+
+QLineEdit[outer_stylesheet="lineedit_pwd"]:focus{
+color:hsv(0,0,43);
+}
+
+QFrame[outer_stylesheet="frame_back_round"]{
+border:2px solid #ff546b;
+border-radius:10px;
+background-color:transparent;
+}
+QDialog,
+QMenu,
+QFrame#frame_main,
+QFrame#frame_function{
+background-color:#383838;
+background-image:url(pos/fastfd_fuping_bg_pic);
+}
+QMenu{
+border:2px solid #ff546b;
+color:white;
+}
+/*======================================登录密码和用户名end====================================*/
+/*======================================后台系统设置左边的listwidget begin====================================*/
+QListWidget[outer_stylesheet="listwidget_systemsettings"]{
+color:white;
+font-size:15t;
+background-color:transparent;
+}
+QListWidget[outer_stylesheet="listwidget_systemsettings"]::item{
+height:40px;
+background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:1, y2:1, stop :0 white, stop :0.02 white, stop:0.02 rgb(69, 69, 69), stop:1  rgba(34, 38, 39));
+color: rgb(255, 255, 255);
+border:0px;
+}
+
+QListWidget[outer_stylesheet="listwidget_systemsettings"]::item:selected{
+color:white;
+background-color:#dbe3e9;color:#7b7878;
+}
+QListWidget[outer_stylesheet="listwidget_systemsettings"]::item:focus{
+color:white;
+background-color:#dbe3e9;color:#7b7878;
+}
+QTableView[outer_stylesheet = "fexpandmain_tableview"]{
+        border:0;
+        selection-background-color: transparent;
+
+        background:#292929;
+        qproperty-divColor:#2b2b2b;/*前台点菜的分隔线*/
+        qproperty-defColor:white;
+        qproperty-itemBgColor:#383838;
+        qproperty-nameSubColor:#999999;/*前台点菜的子菜品名字背景色*/
+        qproperty-nameColor:#2b2b2b;/*前台点菜的菜品名字背景色*/
+}
+QLabel[outer_stylesheet = "fexpandmain_tableview"]{
+        background:#292929;
+}
+
+
+/*background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #cccccc, stop:1 #666666);*/
+QTableView[outer_stylesheet = "tableView_type"]{
+    border:0;
+    background:transparent;
+    selection-background-color: transparent;
+
+    qproperty-bgNormalColor10:hsv(0,0,43);
+    qproperty-textColor:white;
+    qproperty-bgBorderColor:transparent;
+}
+QTableView[outer_stylesheet = "tableView_subtype"]{
+    border:0;
+    background:transparent;
+    selection-background-color: transparent;
+
+    qproperty-bgNormalColor10:#888888;
+    qproperty-textColor:white;
+    qproperty-bgBorderColor:transparent;
+}
+QTableView[outer_stylesheet = "tableView_dish"]{
+    border:0;
+    background:transparent;
+    selection-background-color: transparent;
+
+    qproperty-bgNormalColor10:hsv(0,0,43);
+    qproperty-bgNormalPlain:false;
+    qproperty-textColor:white;
+    qproperty-bgBorderColor:transparent;
+}
+QTableView[outer_stylesheet = "tableView_type_pop"]{
+    border:0;
+    background:#181818;
+    selection-background-color: transparent;
+
+    qproperty-bgNormalColor10:hsv(0,0,43);
+    qproperty-bgNormalPlain:false;
+    qproperty-textColor:white;
+    qproperty-bgBorderColor:transparent;
+}
+QTableView[outer_stylesheet = "restaurantTableView"]{
+    border:0;
+    background:transparent;
+    selection-background-color: transparent;
+
+    qproperty-textColor:hsv(0,0,43);
+}
+/*======================================后台系统设置左边的listwidget end====================================*/
+/*表格*/
+QFrame#frame_dish_bottom{
+background-color:hsv(0,0,43);
+}
+QTableView,
+QStandardItem{
+border:0px;
+background-color:gainsboro;
+color:hsv(0,0,43);
+alternate-background-color:white;
+}
+QTableView:!enabled,
+QStandardItem:!enabled{
+alternate-background-color:gainsboro;
+}
+QHeaderView::section,
+QHeaderView,
+QTableView QTableCornerButton::section{
+border:0px; background-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:1, stop:0 #444444, stop:1 #2b2b2b);
+}
+QTableView QTableCornerButton,
+QHeaderView::section{
+color:white;
+}
+QTableView::item:selected{
+        background: #ff546b;
+}
+
+QTableView::item:!selected{
+        background: transparent;
+}
+/*付款界面的桌类信息*/
+QFrame#frame_deskinfo{
+background-color:#575757;
+border-bottom:4px solid hsv(0,0,43);
+}
+QFrame#fexpandmain_payover{
+background:#000000;
+}
+
+QLabel[outer_stylesheet="label_upon_bg"]{
+color:white;
+}
+*[outer_stylesheet="xx_num"]{
+border:0px;
+color:#ff546b;
+font-size:14pt;
+}
+[outer_stylesheet="xx_amount"]{
+border:0px;
+color:#ff546b;
+font-size:14pt;
+}
+/*付款界面的付款详情*/
+*[outer_stylesheet="pay_detail_info"]{
+font-size:17pt;
+color:white;
+background-color:hsv(0,0,43);
+padding-left:10px;
+padding-right:10px;
+}
+*[outer_stylesheet="pay_detail_info2"]{
+font-size:17pt;
+color:white;
+background-color:#ff546b;
+padding-left:10px;
+padding-right:10px;
+}
+/*付款界面的付款汇总*/
+*[outer_stylesheet="pay_summary_info"]{
+font-size:14pt;
+color:white;
+background:transparent;
+}
+/*付款界面*/
+/*后台所有*/
+QFrame[outer_stylesheet="frame_backview"]{
+border-top:5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:1 #292929,
+stop:0 #0f0f0f
+);
+border-bottom:5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+stop:1 #0f0f0f,
+stop:0 #292929
+);
+
+border-left:5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:1 #292929,
+stop:0 #0f0f0f
+);
+border-right:5px solid qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0,
+stop:1 #0f0f0f,
+stop:0 #292929
+);
+background-color:#292929;
+}
+QToolButton[outer_stylesheet="toolbutton_backview_v"]{
+font-size:12pt;
+color:#bbbbbb;
+border:3px solid #ff546b;
+background-repeat: no-repeat;
+background-position: top;
+padding-top:10px;
+padding-bottom:-30px;
+background-origin:content;
+}
+
+QToolButton[outer_stylesheet="toolbutton_backview_v"]:pressed{
+color:white;
+font-weight:bold;
+background-color:#ff546b;
+border:0px;
+}
+
+QToolButton[outer_stylesheet="toolbutton_backview_h"]{
+font-size:9pt;
+color:#bbbbbb;
+border:3px solid #ff546b;
+background-repeat: no-repeat;
+background-position: left;
+padding-left:10px;
+padding-right:-30px;
+background-origin:content;
+}
+
+QToolButton[outer_stylesheet="toolbutton_backview_h"]:pressed{
+color:white;
+font-weight:bold;
+background-color:#ff546b;
+border:0px;
+}
+QToolButton#toolButton_dbset{
+        qproperty-icon:url(:/image/widgets_pic/settings.png);
+}
+QFrame[outer_stylesheet="frame_backview_title"]
+{
+background-color:hsv(0,0,43);
+}
+*[outer_stylesheet="normal_view_color"]{background-image: url(:/image/bg2.jpg);}
+
+QToolButton[outer_stylesheet="autoRaise"]{
+        color:white;
+}
+

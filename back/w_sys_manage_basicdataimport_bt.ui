@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_basicdataimport_bt</class>
+ <widget class="QDialog" name="w_sys_manage_basicdataimport_bt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_subtype">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>190</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>subtype</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>360</y>
+     <width>601</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#ff546b;</string>
+   </property>
+   <property name="text">
+    <string>列数最小是:0(-1表示跳过); 导入表中，每列数据不能包含分隔符</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>459</x>
+     <y>40</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>列</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_barcode">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>190</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1</number>
+   </property>
+   <property name="value">
+    <number>8</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_price">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>70</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>price</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_subtype">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>190</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>4</number>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="comboBox_codec">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>440</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>UTF-8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GBK</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_code">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>70</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>code</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_no">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>70</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>270</y>
+     <width>700</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:#ff546b;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>编码</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>410</y>
+     <width>601</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#ff546b;</string>
+   </property>
+   <property name="text">
+    <string>是/否:Y/N</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_unit">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>110</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>默认单位</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_unit">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>110</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>7</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_type">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>150</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>type</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>10</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>文件位置</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_path">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>401</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_name_2">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>230</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1</number>
+   </property>
+   <property name="value">
+    <number>-1</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>280</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>跳过第一行</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_import">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>440</y>
+     <width>99</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开始导入</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>230</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>name2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>280</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分隔符</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>169</x>
+     <y>40</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>列</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_ch_typeno">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>默认大类</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_discount">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>150</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>-1</number>
+   </property>
+   <property name="value">
+    <number>5</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>280</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="editable">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>,</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>440</y>
+     <width>99</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_3">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>280</y>
+     <width>191</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>大类编号</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_price">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>70</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>2</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_unit">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>110</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>unit</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_barcode">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>190</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>barcode</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_name">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>110</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>10</y>
+     <width>41</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>110</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_discount">
+   <property name="geometry">
+    <rect>
+     <x>319</x>
+     <y>150</y>
+     <width>115</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>discount</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_type">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_preview">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>440</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>预览</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_unit">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>320</y>
+     <width>151</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单位编号</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>fastfdbacklogo.png</file>
+    </qresource>
+</RCC>

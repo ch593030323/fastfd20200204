@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>saas_guide_activateTerminal</class>
+ <widget class="QWidget" name="saas_guide_activateTerminal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>260</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>市</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>联系人</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_contacts">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>160</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_address">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>360</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_terminalCode">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>310</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>区</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>主机名</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_telephone">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>210</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>360</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>地址</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>手机号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_area">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>310</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_province">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>260</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>机器号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_storeName">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>260</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>省</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_city">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>260</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_street">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>310</y>
+     <width>160</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>310</y>
+     <width>67</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>路</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>481</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:20pt;</string>
+   </property>
+   <property name="text">
+    <string>机器激活</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>510</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background:#ff546b;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_terminalCode</tabstop>
+  <tabstop>lineEdit_storeName</tabstop>
+  <tabstop>lineEdit_contacts</tabstop>
+  <tabstop>lineEdit_telephone</tabstop>
+  <tabstop>lineEdit_province</tabstop>
+  <tabstop>lineEdit_city</tabstop>
+  <tabstop>lineEdit_area</tabstop>
+  <tabstop>lineEdit_street</tabstop>
+  <tabstop>lineEdit_address</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

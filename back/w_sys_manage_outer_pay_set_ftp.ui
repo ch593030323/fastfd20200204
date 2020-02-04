@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_outer_pay_set_ftp</class>
+ <widget class="QDialog" name="w_sys_manage_outer_pay_set_ftp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>277</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QFrame" name="frame_ftpup">
+     <layout class="QVBoxLayout" name="verticalLayout_6" stretch="1,0,0">
+      <item>
+       <widget class="QFrame" name="frame_ftpupload">
+        <property name="outer_stylesheet" stdset="0">
+         <string>frame_detail_show</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="3" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>上传记录</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1" colspan="3">
+          <widget class="QComboBox" name="comboBox_records"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_47">
+           <property name="text">
+            <string>用户ID</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="ftptp_usr">
+           <property name="text">
+            <string>B41B0231N01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_41">
+           <property name="text">
+            <string>店铺号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="ftptp_pwd">
+           <property name="text">
+            <string>15tZ8Rjr</string>
+           </property>
+           <property name="echoMode">
+            <enum>QLineEdit::Password</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_42">
+           <property name="text">
+            <string>商品号</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="ftptp_storecode">
+           <property name="text">
+            <string>B0231N01</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLineEdit" name="ftptp_plu">
+           <property name="text">
+            <string>B0231N01CY0001</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLabel" name="label_50">
+           <property name="text">
+            <string>密码</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_48">
+           <property name="text">
+            <string>FTP平台地址</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="3">
+          <widget class="QLineEdit" name="ftptp_address">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>FTP://ftp.lncrland.com</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_40">
+        <property name="styleSheet">
+         <string notr="true">color:#ff546b;</string>
+        </property>
+        <property name="text">
+         <string>每天开机时会上传前一天的数据</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="lds_toolbar_button" name="pushButton_test">
+          <property name="text">
+           <string>测试上传今天的数据</string>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>pushbutton</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_toolbar_button" name="pushButton_ok">
+          <property name="text">
+           <string>确定</string>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>pushbutton</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_toolbar_button" name="pushButton_exit">
+          <property name="text">
+           <string>退出</string>
+          </property>
+          <property name="outer_stylesheet" stdset="0">
+           <string>pushbutton</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

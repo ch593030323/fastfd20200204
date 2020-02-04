@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_rpt_report_frame_cash</class>
+ <widget class="QWidget" name="w_rpt_report_frame_cash">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>187</width>
+    <height>112</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="label_group">
+     <property name="text">
+      <string>报表分组类型</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="lds_ComboBox" name="comboBox_group"/>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_group_2">
+     <property name="text">
+      <string>分组子类型</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="lds_ComboBox" name="comboBox_group_2"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

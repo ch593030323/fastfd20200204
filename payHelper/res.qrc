@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>rec/btn_press.png</file>
+        <file>rec/btn_release.png</file>
+        <file>rec/pay_press.png</file>
+        <file>rec/pay_release.png</file>
+        <file>rec/logo.png</file>
+        <file>rec/2017120100299169(RSA2).txt</file>
+        <file>rec/loading.gif</file>
+        <file>rec/2015092200312405(RSA).txt</file>
+    </qresource>
+</RCC>

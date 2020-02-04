@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_kitchen_dish_plan_new</class>
+ <widget class="QDialog" name="w_bt_dish_kitchen_dish_plan_new">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>371</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1,0,1">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>方案编号</string>
+       </property>
+       <property name="flat">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_vch_plan_id"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>方案名称</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEdit_vch_plan_name"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
+     <item row="0" column="1">
+      <widget class="lds_ComboBox" name="comboBox_int_print_id"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="pushButton_print_set">
+       <property name="text">
+        <string>打印机</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>单据类型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="lds_CheckBox" name="checkBox_ch_print_id_second_use">
+       <property name="text">
+        <string>备用打印机</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>组合商品类型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="lds_ComboBox" name="comboBox_int_print_id_second"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="lds_ComboBox" name="comboBox_int_dish_type"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>份数</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="spinBox_int_print_count"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>票头留白</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="lds_ComboBox" name="comboBox_int_suit_type"/>
+     </item>
+     <item row="5" column="1">
+      <widget class="QSpinBox" name="spinBox_int_head_block"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>票尾留白</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QSpinBox" name="spinBox_int_tail_block"/>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>切换商品名称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="lds_ComboBox" name="comboBox_vch_dishname_No"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="lds_CheckBox" name="checkBox_ch_check_state">
+     <property name="text">
+      <string>厨打时检测打印机状态</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label_div_1">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>2</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>2</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="outer_stylesheet" stdset="0">
+      <string>line_div_h</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>厨打打印机建议使用:串口和网口打印机</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="lds_toolbar" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>pay_helper_main</class>
+ <widget class="QDialog" name="pay_helper_main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color:rgb(214, 216, 220);
+}
+QLabel,
+QComboBox{
+font-size:15pt;
+}
+QLineEdit{
+font-size:15pt;
+background-color:snow;
+min-height:30px;
+}
+QPushButton{
+font-size:15pt;
+min-height:32px;
+padding:5 15 5 15;
+border-image: url(:/rec/btn_release.png);
+}
+QPushButton:pressed{
+border-image: url(:/rec/btn_press.png);
+}
+QToolBox QWidget{
+    min-height:32px;
+    font-size:15pt;
+}
+QToolBox::tab {
+	background-color:white;
+    border-radius: 5px;
+    border-right:1px solid gray;
+    border-bottom:1px solid gray;
+    color:gray;
+}
+QToolBox::tab:selected {
+	background-color:white;
+    border-radius: 5px;
+    border-right:1px solid gray;
+    border-bottom:1px solid gray;
+    color:black;
+}</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

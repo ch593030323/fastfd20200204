@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>kds_main_info_brief</class>
+ <widget class="QFrame" name="kds_main_info_brief">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <widget class="kds_main_info_brief_frame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>401</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_up">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>90</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_arrow_up.png</normaloff>:/kds/order_arrow_up.png</iconset>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_down">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>140</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_arrow_down.png</normaloff>:/kds/order_arrow_down.png</iconset>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_cook">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>180</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_cooking.png</normaloff>:/kds/order_cooking.png</iconset>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_service">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>220</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_service.png</normaloff>:/kds/order_service.png</iconset>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_take">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>260</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_done.png</normaloff>:/kds/order_done.png</iconset>
+   </property>
+  </widget>
+  <widget class="lds_pushbutton" name="pushButton_back">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>300</y>
+     <width>99</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="icon">
+    <iconset resource="kds.qrc">
+     <normaloff>:/kds/order_back.png</normaloff>:/kds/order_back.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_pushbutton</class>
+   <extends>QPushButton</extends>
+   <header>lds_pushbutton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>kds_main_info_brief_frame</class>
+   <extends>QFrame</extends>
+   <header>kds_main_info_brief_frame.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="kds.qrc"/>
+ </resources>
+ <connections/>
+</ui>

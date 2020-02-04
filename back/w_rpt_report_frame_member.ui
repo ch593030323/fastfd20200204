@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_rpt_report_frame_member</class>
+ <widget class="QWidget" name="w_rpt_report_frame_member">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>185</width>
+    <height>162</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButton_vch_memberno">
+     <property name="text">
+      <string>会员</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="lineEdit_vch_memberno"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_ch_typeno">
+     <property name="text">
+      <string>卡类型</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="lds_ComboBox" name="comboBox_ch_typeno"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label_ch_state">
+     <property name="text">
+      <string>卡状态</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="lds_ComboBox" name="comboBox_vch_operid"/>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_vch_operid">
+     <property name="text">
+      <string>操作员</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="lds_ComboBox" name="comboBox_ch_state"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_ch_dish_type">
+     <property name="text">
+      <string>大类</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="lds_ComboBox" name="comboBox_ch_dish_type"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

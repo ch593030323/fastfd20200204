@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_kitchen_dish_param</class>
+ <widget class="QDialog" name="w_bt_dish_kitchen_dish_param">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>599</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="lds_ComboBox" name="kt_fmt_table_fmts">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>240</y>
+     <width>85</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_ch_tableno_scale">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>40</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_ch_serialno_scale">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>100</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_vch_operid_scale">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>40</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_dt_operdate_scale">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>70</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_ch_billno_scale">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>40</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_dt_cur_scale">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>70</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_checkBox_vch_memo_scale">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>100</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_int_person_scale">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>70</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_content_scale">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>150</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_checkBox_ch_tailtotal_scale">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>350</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>419</x>
+     <y>460</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_title">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>名称</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_dt_cur">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>70</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打印时间</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_spinBox_num_num_width">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>214</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_vch_memo">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>100</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开台备注</string>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_spinBox_num_price_row">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>280</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_num_price">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>281</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>价格</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>150</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>字符宽</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>400</y>
+     <width>131</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>厨打间隔</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_spinBox_unit_row">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>247</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_spinBox_num_price_width">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_spinBox_num_num_row">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>214</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_unit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>248</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单位</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ch_rowno">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>241</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>本单序号</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_vch_dishname">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>182</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>品名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_div_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>145</y>
+     <width>518</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>2</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>line_div_h</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>10</y>
+     <width>121</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>切换语言</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ch_tailtotal">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>350</y>
+     <width>241</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打印合计</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_int_person">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>70</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>人数</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_spinBox_vch_dishname_width">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>181</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>150</y>
+     <width>81</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>行</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_vch_operid">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>40</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>操作员</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_fmt_serial_no_desc">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>270</y>
+     <width>146</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_spinBox_unit_width">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>247</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ktitle2shopname">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>387</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>厨打单替换为店名</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ch_billno">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>40</y>
+     <width>110</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开台单号</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_num_num">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>215</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>数量</string>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_spinBox_vch_dishname_row">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>181</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_vch_plan_id">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>291</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>打印厨打方案名称</string>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_comboBox_vch_language">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_fmt_vch_operid">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>310</y>
+     <width>85</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ch_tableno">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>餐桌名称</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_dt_operdate">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下单时间</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_ch_serialno">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>流水号</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="kt_spinBox_vtimeout">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>400</y>
+     <width>85</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_hide_ExSet">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>240</y>
+     <width>32</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:1px solid black;
+color:black;
+background:white;</string>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </widget>
+  <widget class="lds_checkbox_unwrap" name="kt_checkBox_kitchen_start">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>启动厨打服务器</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_kitchen_ip">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>449</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:#ff546b;</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>460</y>
+     <width>85</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_lineEdit_vch_waiter_scale">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>100</y>
+     <width>51</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_vch_waiter">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>100</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>服务员</string>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="kt_fmt_vch_waiter">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>350</y>
+     <width>85</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="kt_checkBox_name_auto_cut">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>180</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动裁剪</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_checkbox_unwrap</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox_unwrap.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_ok</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+  <tabstop>kt_checkBox_ch_tableno</tabstop>
+  <tabstop>kt_spinBox_unit_width</tabstop>
+  <tabstop>kt_checkBox_ktitle2shopname</tabstop>
+  <tabstop>kt_spinBox_vch_dishname_row</tabstop>
+  <tabstop>kt_checkBox_num_num</tabstop>
+  <tabstop>kt_checkBox_ch_billno</tabstop>
+  <tabstop>kt_checkBox_title</tabstop>
+  <tabstop>kt_checkBox_dt_cur</tabstop>
+  <tabstop>kt_checkBox_vch_memo</tabstop>
+  <tabstop>kt_checkBox_num_price</tabstop>
+  <tabstop>kt_spinBox_num_price_row</tabstop>
+  <tabstop>kt_spinBox_vtimeout</tabstop>
+  <tabstop>kt_checkBox_dt_operdate</tabstop>
+  <tabstop>kt_spinBox_num_num_width</tabstop>
+  <tabstop>kt_spinBox_num_price_width</tabstop>
+  <tabstop>kt_spinBox_num_num_row</tabstop>
+  <tabstop>kt_checkBox_unit</tabstop>
+  <tabstop>kt_spinBox_unit_row</tabstop>
+  <tabstop>kt_checkBox_ch_rowno</tabstop>
+  <tabstop>kt_checkBox_vch_dishname</tabstop>
+  <tabstop>kt_checkBox_ch_tailtotal</tabstop>
+  <tabstop>kt_checkBox_int_person</tabstop>
+  <tabstop>kt_checkBox_ch_serialno</tabstop>
+  <tabstop>kt_spinBox_vch_dishname_width</tabstop>
+  <tabstop>kt_checkBox_vch_operid</tabstop>
+  <tabstop>kt_fmt_table_fmts</tabstop>
+  <tabstop>kt_fmt_serial_no_desc</tabstop>
+  <tabstop>kt_checkBox_kitchen_start</tabstop>
+  <tabstop>kt_checkBox_vch_plan_id</tabstop>
+  <tabstop>kt_comboBox_vch_language</tabstop>
+  <tabstop>kt_lineEdit_ch_tableno_scale</tabstop>
+  <tabstop>kt_lineEdit_ch_serialno_scale</tabstop>
+  <tabstop>kt_lineEdit_vch_operid_scale</tabstop>
+  <tabstop>kt_lineEdit_dt_operdate_scale</tabstop>
+  <tabstop>kt_lineEdit_ch_billno_scale</tabstop>
+  <tabstop>kt_lineEdit_dt_cur_scale</tabstop>
+  <tabstop>kt_checkBox_vch_memo_scale</tabstop>
+  <tabstop>kt_lineEdit_int_person_scale</tabstop>
+  <tabstop>kt_lineEdit_content_scale</tabstop>
+  <tabstop>kt_checkBox_ch_tailtotal_scale</tabstop>
+  <tabstop>kt_fmt_vch_operid</tabstop>
+  <tabstop>pushButton_hide_ExSet</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

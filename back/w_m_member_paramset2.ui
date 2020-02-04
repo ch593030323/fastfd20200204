@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_paramset2</class>
+ <widget class="QDialog" name="w_m_member_paramset2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+     <item>
+      <widget class="ftableview" name="tableView_list">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>120</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>frame_backview</string>
+       </property>
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>800</width>
+          <height>600</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="page">
+         <widget class="checkbox_phonestyle" name="checkBox_m_card_paydiscount">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值卡会员付款时自动折扣</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_member_pay">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>330</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值会员付款允许负数</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_m_fetch_base">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>290</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>取款可取保本金额</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_deposit_pay_all">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>130</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值卡付款必须全单付满</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_vip_phone_verify">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>370</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>储值卡付款时需短信验证</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_member_bank">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>250</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>会员作废的时候打印账单</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_local_select">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>210</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>会员消费时可查找会员卡</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_m_deposit_negative">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值与实收金额必须相等</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_discount_view">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>170</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>折扣时显示会员折扣详情</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>601</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>最大充值金额</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_max_deposit">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="page_2">
+         <widget class="checkbox_phonestyle" name="checkBox_input_memberno">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>140</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>可手动输入会员号</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_discount">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>优惠卡(仅积分和折扣使用)</string>
+          </property>
+         </widget>
+         <widget class="checkbox_phonestyle" name="checkBox_save">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>600</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>充值卡(储值卡，预充值消费)</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>90</y>
+            <width>601</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>卡类型</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="lds_ComboBox" name="comboBox_vip_card_type">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="pushButton_m_clearAll">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>卡类型重置</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="widget_ic" native="true">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>140</y>
+            <width>601</width>
+            <height>30</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_icpwd">
+             <property name="text">
+              <string>IC卡读写密码</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_vip_ic_password">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>FFFFFF</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Normal</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_ic_pwd_def">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>默认</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_ok">
+       <property name="text">
+        <string>保存</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_cancel">
+       <property name="text">
+        <string>取消</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>checkbox_phonestyle</class>
+   <extends>QPushButton</extends>
+   <header>checkbox_phonestyle.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_ok</tabstop>
+  <tabstop>pushButton_cancel</tabstop>
+  <tabstop>tableView_list</tabstop>
+  <tabstop>lineEdit_max_deposit</tabstop>
+  <tabstop>comboBox_vip_card_type</tabstop>
+  <tabstop>pushButton_m_clearAll</tabstop>
+  <tabstop>pushButton_ic_pwd_def</tabstop>
+  <tabstop>lineEdit_vip_ic_password</tabstop>
+  <tabstop>checkBox_discount</tabstop>
+  <tabstop>checkBox_save</tabstop>
+  <tabstop>checkBox_m_deposit_negative</tabstop>
+  <tabstop>checkBox_m_card_paydiscount</tabstop>
+  <tabstop>checkBox_deposit_pay_all</tabstop>
+  <tabstop>checkBox_discount_view</tabstop>
+  <tabstop>checkBox_local_select</tabstop>
+  <tabstop>checkBox_member_bank</tabstop>
+  <tabstop>checkBox_vip_phone_verify</tabstop>
+  <tabstop>checkBox_member_pay</tabstop>
+  <tabstop>checkBox_m_fetch_base</tabstop>
+  <tabstop>checkBox_input_memberno</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

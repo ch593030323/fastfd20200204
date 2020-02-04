@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_operatorinformation_Dialog</class>
+ <widget class="QDialog" name="w_sys_manage_operatorinformation_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>588</width>
+    <height>464</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_5">
+     <property name="styleSheet">
+      <string notr="true">color:#ff546b;</string>
+     </property>
+     <property name="text">
+      <string>注:新增操作员的操作密码同操作代码</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,0">
+     <item>
+      <widget class="lds_tableView" name="tableView"/>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="outer_stylesheet" stdset="0">
+        <string>frame_detail_show</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>操作姓名</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_vch_operid"/>
+        </item>
+        <item row="7" column="1">
+         <widget class="lds_doublespinbox" name="lineEdit_num_present"/>
+        </item>
+        <item row="6" column="1">
+         <widget class="lds_doublespinbox" name="lineEdit_num_free"/>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_vch_password"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>赠送金额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>操作代码</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1">
+         <widget class="lds_doublespinbox" name="lineEdit_num_deduct_rate">
+          <property name="suffix">
+           <string>%</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>优惠限额</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>操作密码</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="lds_spinbox" name="lineEdit_int_discount">
+          <property name="suffix">
+           <string>%</string>
+          </property>
+          <property name="minimum">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="2">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_discount">
+          <property name="text">
+           <string>discount</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_vch_operator"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>扣点</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0" colspan="2">
+         <widget class="lds_CheckBox" name="checkBox_ch_waiter">
+          <property name="text">
+           <string>是否服务员</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="lds_CheckBox" name="checkBox_ch_free_flag">
+          <property name="text">
+           <string>免单控制</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="lds_CheckBox" name="checkBox_ch_flag">
+          <property name="text">
+           <string>是否生效</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_new">
+       <property name="text">
+        <string>新增</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_del">
+       <property name="text">
+        <string>删除</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_save">
+       <property name="text">
+        <string>保存</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_spinbox</class>
+   <extends>QSpinBox</extends>
+   <header>lds_spinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>lds_doublespinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tableView</tabstop>
+  <tabstop>lineEdit_vch_operid</tabstop>
+  <tabstop>lineEdit_vch_operator</tabstop>
+  <tabstop>lineEdit_vch_password</tabstop>
+  <tabstop>checkBox_ch_free_flag</tabstop>
+  <tabstop>checkBox_ch_waiter</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

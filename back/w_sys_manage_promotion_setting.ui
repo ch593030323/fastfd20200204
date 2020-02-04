@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_managepromotion_setting</class>
+ <widget class="QDialog" name="w_sys_managepromotion_setting">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>977</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QFrame" name="frame_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_ok">
+        <property name="text">
+         <string>保存</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_exit">
+        <property name="text">
+         <string>退出</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bath">
+        <property name="text">
+         <string>批处理</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_up">
+        <property name="text">
+         <string>上一页</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_down">
+        <property name="text">
+         <string>下一页</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="outer_stylesheet" stdset="0">
+      <string>frame_detail_show</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>开始日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_datetimeEdit" name="promotion_setting_date">
+          <property name="displayFormat">
+           <string>yyyy-MM-dd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>结束日期</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_datetimeEdit" name="promotion_setting_date_2">
+          <property name="displayFormat">
+           <string>yyyy-MM-dd</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_target">
+          <property name="text">
+           <string>生效目标</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_ComboBox" name="promotion_setting_target"/>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Mon">
+          <property name="text">
+           <string>周一</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Tues">
+          <property name="text">
+           <string>周二</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Wed">
+          <property name="text">
+           <string>周三</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Thur">
+          <property name="text">
+           <string>周四</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Fri">
+          <property name="text">
+           <string>周五</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Sat">
+          <property name="text">
+           <string>周六</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="promotion_setting_Sun">
+          <property name="text">
+           <string>周日</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">background:#ff546b;</string>
+          </property>
+          <property name="text">
+           <string>上午</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>开始时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_timeEdit" name="promotion_setting_am">
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>结束时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_timeEdit" name="promotion_setting_am_2">
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="styleSheet">
+           <string notr="true">background:#ff546b;</string>
+          </property>
+          <property name="text">
+           <string>下午</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>开始时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_timeEdit" name="promotion_setting_pm">
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>结束时间</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="lds_timeEdit" name="promotion_setting_pm_2">
+          <property name="displayFormat">
+           <string>hh:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="lds_treeWidget" name="treeWidget">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <column>
+        <property name="text">
+         <string notr="true">1</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_tableView" name="tableView"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_treeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>lds_treewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_datetimeEdit</class>
+   <extends>QDateTimeEdit</extends>
+   <header>lds_datetimeedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_timeEdit</class>
+   <extends>QTimeEdit</extends>
+   <header>lds_timeedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

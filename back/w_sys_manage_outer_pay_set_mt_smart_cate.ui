@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_outer_pay_set_mt_smart_cate</class>
+ <widget class="QDialog" name="w_sys_manage_outer_pay_set_mt_smart_cate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>620</width>
+    <height>374</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_ePoiId">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_test">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>330</y>
+     <width>99</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>开发者id</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_signKey">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_demo">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>330</y>
+     <width>99</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>demo</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_cancel">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>330</y>
+     <width>99</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>业务类型</string>
+   </property>
+  </widget>
+  <widget class="lds_toolbar_button" name="pushButton_ok">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>330</y>
+     <width>99</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>pushbutton</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_appAuthToken">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ERP门店id</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>认领门店返回的token</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_developerId">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_ComboBox" name="comboBox_businessId">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>280</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>600</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>密钥</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

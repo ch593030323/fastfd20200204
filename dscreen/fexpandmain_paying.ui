@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fexpandmain_paying</class>
+ <widget class="QWidget" name="fexpandmain_paying">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>616</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
+   <property name="spacing">
+    <number>2</number>
+   </property>
+   <item row="2" column="0">
+    <widget class="lds_label_text" name="lineEdit_int_rate" native="true"/>
+   </item>
+   <item row="2" column="1">
+    <widget class="lds_label_text" name="lineEdit_service" native="true"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="lds_label_text" name="lineEdit_change" native="true"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="lds_label_text" name="lineEdit_discount" native="true"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="lds_label_text" name="lineEdit_qty" native="true"/>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="lds_label_text" name="lineEdit_realreceive" native="true"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="lds_label_text" name="lineEdit_consum" native="true">
+     <zorder>lineEdit_realreceive</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_label_text</class>
+   <extends>QWidget</extends>
+   <header>lds_label_text.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

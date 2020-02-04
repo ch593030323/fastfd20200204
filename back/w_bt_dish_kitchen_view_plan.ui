@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_bt_dish_kitchen_view_plan</class>
+ <widget class="QDialog" name="w_bt_dish_kitchen_view_plan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="lds_toolbar_button" name="pushButton_refresh_machine">
+           <property name="text">
+            <string>刷新</string>
+           </property>
+           <property name="outer_stylesheet" stdset="0">
+            <string>pushbutton</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="lds_ComboBox" name="comboBox_kt_kitchen_shop">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="lds_tableView" name="tableView"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="outer_stylesheet" stdset="0">
+        <string>frame_detail_show</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout" columnstretch="1,0,0">
+        <item row="14" column="0">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>前台</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="1" colspan="2">
+         <widget class="lds_ComboBox" name="comboBox_vch_language"/>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>语言</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="lds_spinbox" name="spinBox_int_voice_count">
+          <property name="suffix">
+           <string>次</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0">
+         <widget class="lds_CheckBox" name="checkBox_ch_voice_count">
+          <property name="text">
+           <string>语音播放</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="lds_ComboBox" name="comboBox_vch_kitchen_type"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>预警时间</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="2">
+         <widget class="QPushButton" name="pushButton_ogg_new_order">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>:/image/btn_icon/order_finished.png</normaloff>:/image/btn_icon/order_finished.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>编号</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="lds_CheckBox" name="checkBox_ch_auto_take">
+          <property name="text">
+           <string>自动取餐</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="lds_CheckBox" name="checkBox_ch_screen_secondary">
+          <property name="text">
+           <string>副屏</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1" colspan="2">
+         <widget class="lds_spinbox" name="spinBox_int_auto_take">
+          <property name="suffix">
+           <string>分钟</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1" colspan="2">
+         <widget class="lds_spinbox" name="spinBox_int_order_warn_mins">
+          <property name="suffix">
+           <string>分钟</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>名称</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_vch_plan_id"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>出品机器</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>类型</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QLineEdit" name="lineEdit_vch_plan_name"/>
+        </item>
+        <item row="5" column="0" colspan="3">
+         <widget class="lds_CheckBox" name="checkBox_ch_pop_new_bill_info">
+          <property name="text">
+           <string>有新的菜品时弹出提示窗</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="lds_ComboBox" name="comboBox_vch_plan_id_service"/>
+        </item>
+        <item row="11" column="1" colspan="2">
+         <widget class="lds_ComboBox" name="comboBox_vch_screen_secondary_size">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="2">
+         <widget class="lds_ComboBox" name="comboBox_vch_screen_primary_size">
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0" colspan="3">
+         <widget class="QLineEdit" name="lineEdit_vch_terminal"/>
+        </item>
+        <item row="12" column="0" colspan="3">
+         <widget class="lds_CheckBox" name="checkBox_ch_auto_login">
+          <property name="text">
+           <string>自动登录</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_ok">
+       <property name="text">
+        <string>保存</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_cancel">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>lds_checkbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_spinbox</class>
+   <extends>QSpinBox</extends>
+   <header>lds_spinbox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

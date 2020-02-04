@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>doublewidget</class>
+ <widget class="QDialog" name="doublewidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>925</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="tableview_item" name="tableView_m">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>170</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0;background:transparent;selection-background-color: transparent;</string>
+   </property>
+  </widget>
+  <widget class="fexpandmain_table" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>271</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_deskinfo">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_num">
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+        <property name="text">
+         <string>num</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_total">
+        <property name="styleSheet">
+         <string notr="true">color:white;</string>
+        </property>
+        <property name="text">
+         <string>total</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>tableview_item</class>
+   <extends>QTableView</extends>
+   <header>tableview_item.h</header>
+  </customwidget>
+  <customwidget>
+   <class>fexpandmain_table</class>
+   <extends>QTableView</extends>
+   <header>fexpandmain_table.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_m_member_list_type_new_Dialog</class>
+ <widget class="QDialog" name="w_m_member_list_type_new_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>397</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="outer_stylesheet" stdset="0">
+      <string>frame_detail_show</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" columnstretch="0,1,0,1">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_ch_typeno">
+        <property name="text">
+         <string>类型编号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_ch_typeno"/>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_vch_typename">
+        <property name="text">
+         <string>会员卡类型名称</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="lineEdit_vch_typename"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>会员类型</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="lds_ComboBox" name="comboBox_ch_attribute"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>充值卡付款还现(%)</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="lineEdit_int_backcash_rate">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	background:transparent;
+	border:0px;
+	default:transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>充值卡保本金额</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>优惠方式</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="lds_ComboBox" name="comboBox_ch_favourable"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>固定折扣(%)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="3">
+       <widget class="QLineEdit" name="lineEdit_int_discount">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>会员特价类型</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="3">
+       <widget class="lds_ComboBox" name="comboBox_ch_pricekind"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>是否积分</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="lds_ComboBox" name="comboBox_ch_calc"/>
+      </item>
+      <item row="8" column="2">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>积分是否取整</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="3">
+       <widget class="lds_ComboBox" name="comboBox_ch_calc_type"/>
+      </item>
+      <item row="9" column="2">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>积分单位(元/分每)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>消费积分范围</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="3">
+       <widget class="lds_ComboBox" name="comboBox_ch_area_flag"/>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>会员类型</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" colspan="2">
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>优惠方式</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" colspan="2">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>积分设置</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="styleSheet">
+         <string notr="true">background:transparent;
+color:transparent;
+border:0px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="lds_doublespinbox" name="lineEdit_int_card_baseamount"/>
+      </item>
+      <item row="9" column="3">
+       <widget class="lds_doublespinbox" name="lineEdit_int_calc_unit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_record">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar" name="widget"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_ComboBox</class>
+   <extends>QComboBox</extends>
+   <header>lds_combobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_doublespinbox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header>lds_doublespinbox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar</class>
+   <extends>QFrame</extends>
+   <header>lds_toolbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>lineEdit_ch_typeno</tabstop>
+  <tabstop>comboBox_ch_attribute</tabstop>
+  <tabstop>lineEdit_int_discount</tabstop>
+  <tabstop>comboBox_ch_calc</tabstop>
+  <tabstop>lineEdit_vch_typename</tabstop>
+  <tabstop>lineEdit_int_backcash_rate</tabstop>
+  <tabstop>comboBox_ch_favourable</tabstop>
+  <tabstop>comboBox_ch_pricekind</tabstop>
+  <tabstop>comboBox_ch_calc_type</tabstop>
+  <tabstop>comboBox_ch_area_flag</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

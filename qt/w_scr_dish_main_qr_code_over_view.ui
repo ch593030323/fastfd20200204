@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_main_qr_code_over_view</class>
+ <widget class="QWidget" name="w_scr_dish_main_qr_code_over_view">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_up">
+       <property name="text">
+        <string>上一页</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_down">
+       <property name="text">
+        <string>下一页</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_more">
+       <property name="text">
+        <string>更多</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_refresh">
+       <property name="text">
+        <string>刷新</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_set">
+       <property name="text">
+        <string>设置</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>暂停</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_min">
+       <property name="text">
+        <string>最小化</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_exit">
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_ctrl" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0,0,0,0,0,0,1">
+      <item>
+       <widget class="QLineEdit" name="lineEdit_sn_tableNo">
+        <property name="placeholderText">
+         <string>单号,餐桌编码</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_all">
+        <property name="text">
+         <string>全部订单</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_new">
+        <property name="text">
+         <string>新的订单</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_rcv">
+        <property name="text">
+         <string>已经确定</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_yun_add_dish">
+        <property name="text">
+         <string>云端添加</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_paid">
+        <property name="text">
+         <string>已经支付</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="lds_toolbar_button" name="pushButton_bill_quick_order">
+        <property name="text">
+         <string>先付款订单</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>pushbutton_dish</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>225</width>
+          <height>27</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,1">
+     <item>
+      <widget class="lds_tableView" name="tableView"/>
+     </item>
+     <item>
+      <widget class="QTableView" name="tableView_record">
+       <property name="styleSheet">
+        <string notr="true">QTableView{
+background:transparent;
+selection-background-color: transparent;
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_loading">
+       <property name="text">
+        <string>loading</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_message">
+       <property name="text">
+        <string>message</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_tableView</class>
+   <extends>QTableView</extends>
+   <header>lds_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>pushButton_min</tabstop>
+  <tabstop>tableView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

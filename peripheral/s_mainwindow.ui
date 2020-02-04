@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>S_Mainwindow</class>
+ <widget class="QWidget" name="S_Mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>852</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="iconSize" stdset="0">
+   <size>
+    <width>32</width>
+    <height>32</height>
+   </size>
+  </property>
+  <property name="outer_stylesheet" stdset="0">
+   <string>dialog_hasborder</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QToolBar" name="toolBar">
+     <property name="windowTitle">
+      <string>File actions</string>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="floatable">
+      <bool>false</bool>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="QToolBar" name="toolBar_2">
+     <property name="windowTitle">
+      <string>File actions</string>
+     </property>
+     <property name="movable">
+      <bool>false</bool>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="floatable">
+      <bool>false</bool>
+     </property>
+     <addaction name="separator"/>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QToolBar" name="shapeToolBar">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="windowTitle">
+        <string>Shape actions</string>
+       </property>
+       <property name="movable">
+        <bool>false</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>24</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="floatable">
+        <bool>false</bool>
+       </property>
+       <addaction name="actionAddRectangle"/>
+       <addaction name="actionAdd_Twobarcode"/>
+       <addaction name="actionAdd_Onebarcode"/>
+       <addaction name="separator"/>
+       <addaction name="actionRemoveShape"/>
+       <addaction name="separator"/>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="documentTabs">
+       <property name="styleSheet">
+        <string notr="true">
+ QTabBar::tab {
+	height:0px;/*就是要隐藏高度*/
+	border-width:0px;
+}</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <action name="actionExit">
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+  </action>
+  <action name="actionAddRectangle">
+   <property name="icon">
+    <iconset resource="peripheral.qrc">
+     <normaloff>:/image/rectangle.png</normaloff>:/image/rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Rectangle</string>
+   </property>
+  </action>
+  <action name="actionRemoveShape">
+   <property name="icon">
+    <iconset resource="peripheral.qrc">
+     <normaloff>:/image/remove.png</normaloff>:/image/remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Shape</string>
+   </property>
+  </action>
+  <action name="actionAddRobot">
+   <property name="text">
+    <string>Add robot</string>
+   </property>
+  </action>
+  <action name="actionAddSnowman">
+   <property name="text">
+    <string>Add snowan</string>
+   </property>
+  </action>
+  <action name="actionAdd_Twobarcode">
+   <property name="icon">
+    <iconset resource="peripheral.qrc">
+     <normaloff>:/image/twobar.png</normaloff>:/image/twobar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Twobarcode</string>
+   </property>
+  </action>
+  <action name="actionAdd_Onebarcode">
+   <property name="icon">
+    <iconset resource="peripheral.qrc">
+     <normaloff>:/image/onebar.png</normaloff>:/image/onebar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Onebarcode</string>
+   </property>
+  </action>
+  <action name="actionConfirm">
+   <property name="text">
+    <string>Confirm</string>
+   </property>
+  </action>
+  <action name="actionAdd_BlackFill">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/ui/icons/rectangle.png</normaloff>:/icon/ui/icons/rectangle.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add BlackFill</string>
+   </property>
+  </action>
+  <action name="actionAdd_BlackRect">
+   <property name="text">
+    <string>Add BlackRect</string>
+   </property>
+  </action>
+  <action name="actionAdd_Cancel">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/ui/icons/cancel.png</normaloff>:/icon/ui/icons/cancel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Cancel</string>
+   </property>
+  </action>
+  <action name="actionAdd_Erase">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/icon/ui/icons/erase.png</normaloff>:/icon/ui/icons/erase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Erase</string>
+   </property>
+  </action>
+  <action name="actionAdd_Oblique">
+   <property name="text">
+    <string>Add Oblique</string>
+   </property>
+  </action>
+  <action name="actionAdd_Text">
+   <property name="text">
+    <string>Add Text</string>
+   </property>
+  </action>
+  <action name="actionAdd_WhiteFill">
+   <property name="text">
+    <string>Add WhiteFill</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="peripheral.qrc"/>
+ </resources>
+ <connections/>
+</ui>

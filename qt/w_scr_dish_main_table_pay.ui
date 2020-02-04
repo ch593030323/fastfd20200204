@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_main_table_pay</class>
+ <widget class="QDialog" name="w_scr_dish_main_table_pay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="w_scr_dish_pay_widget" name="frame_main" native="true">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>130</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="fexpandmain_tableview" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>190</y>
+     <width>261</width>
+     <height>131</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_roundeddialog_title_frame" name="frame_deskinfo">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>269</width>
+     <height>122</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="0,1,0,1">
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_num_2">
+      <property name="text">
+       <string>单号</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QLabel" name="label_5">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ff546b</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="label_ch_tableno">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="QLabel" name="label_num">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>xx_num</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_num_10">
+      <property name="text">
+       <string>服务员</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_num_4">
+      <property name="text">
+       <string>桌号</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLabel" name="label_ch_servant">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="3">
+     <widget class="QLabel" name="label_ch_billno">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="4">
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1">
+      <item>
+       <widget class="QLabel" name="label_logo">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>label_upon_bg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_text">
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>label_upon_bg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="2" colspan="2">
+     <widget class="label_click" name="label_total">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>xx_amount</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_roundeddialog_title_frame</class>
+   <extends>QFrame</extends>
+   <header>lds_roundeddialog_title_frame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>fexpandmain_tableview</class>
+   <extends>QTableView</extends>
+   <header>fexpandmain_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>w_scr_dish_pay_widget</class>
+   <extends>QWidget</extends>
+   <header>w_scr_dish_pay_widget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>label_click</class>
+   <extends>QLabel</extends>
+   <header>label_click.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

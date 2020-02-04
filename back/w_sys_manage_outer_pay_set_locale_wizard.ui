@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_sys_manage_outer_pay_set_locale_wizard</class>
+ <widget class="QDialog" name="w_sys_manage_outer_pay_set_locale_wizard">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>475</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="3,2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+       <item>
+        <widget class="ftableview" name="tableView">
+         <property name="outer_stylesheet" stdset="0">
+          <string>tableView_dish</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>2</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>2</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color:#ff546b;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="lds_toolbar_button" name="pushButton_receipt">
+             <property name="text">
+              <string>打印结账单</string>
+             </property>
+             <property name="outer_stylesheet" stdset="0">
+              <string>pushbutton</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tax_type">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>类型</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tax_1_value">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tax1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tax_2_value">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tax2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tax_3_value">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tax3</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_service_value">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>service</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="checkbox_phonestyle" name="checkBox_tax_tax_include_service">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>税收含服务费</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="checkbox_phonestyle" name="checkBox_tax_price_include_tax">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>价格含税</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="checkbox_phonestyle" name="checkBox_tax_service_fix">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>固定服务费</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="checkbox_phonestyle" name="checkBox_tax_tax_fix">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>固定税率</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_2">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="checkbox_phonestyle" name="checkBox_tip_enable">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>小费</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tip_1">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tip1</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tip_2">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tip2</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="public_pushbuton_number" name="pushButton_tip_3">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="text">
+              <string>tip3</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>245</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">
+
+QRadioButton:indicator{
+width:0px;
+}
+
+QRadioButton:checked{
+background:#ff546b;
+border:1px solid lightgray;
+border-radius: 2px;
+color:white;
+}
+
+QRadioButton:unchecked{
+background:transparent;
+border:1px solid lightgray;
+border-radius: 2px;
+color:black;
+}</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_2">
+            <property name="minimumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_set_print">
+       <property name="text">
+        <string>打印机</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_printpath">
+       <property name="styleSheet">
+        <string notr="true">color:#ff546b;</string>
+       </property>
+       <property name="text">
+        <string>printpath</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="lds_toolbar_button" name="pushButton_ok">
+       <property name="text">
+        <string>确定</string>
+       </property>
+       <property name="outer_stylesheet" stdset="0">
+        <string>pushbutton</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>lds_toolbar_button</class>
+   <extends>QPushButton</extends>
+   <header>lds_toolbar_button.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>checkbox_phonestyle</class>
+   <extends>QPushButton</extends>
+   <header>checkbox_phonestyle.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_number</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_number.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

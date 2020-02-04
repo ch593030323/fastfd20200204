@@ -1,0 +1,1803 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>w_scr_dish_main_view_800x600</class>
+ <widget class="QDialog" name="w_scr_dish_main_view_800x600">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1475</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="ftableview" name="tableView_dish">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>256</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>tableView_dish</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>10</y>
+     <width>771</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="2">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_yingyeqingkuang">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>商品销售统计</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="btnlanguageswicth" name="pushButton_language">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="8">
+     <widget class="lds_pushbutton_wrap" name="pushButton_tuichu">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ff546b;</string>
+      </property>
+      <property name="text">
+       <string>退出</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="6">
+     <widget class="lds_pushbutton_wrap" name="pushButton_wine">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>存取酒</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="lds_pushbutton_wrap" name="pushButton_change">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>替换</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="6">
+     <widget class="lds_pushbutton_wrap" name="pushButton_allbillcancel">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>整单取消</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_qukuan">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>会员取款</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_yingyedanju">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>营业数据按单查询</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="lds_pushbutton_wrap" name="pushButton_exitbill">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>退货</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="lds_pushbutton_wrap_noPress" name="pushButton_list_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>报表查询</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="2">
+     <widget class="lds_pushbutton_wrap_noPress" name="pushButton_list">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>收银操作</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="lds_pushbutton_wrap_noPress" name="pushButton_list_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>会员操作</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="lds_pushbutton_wrap" name="pushButton_takeweight">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>取重</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_chongzhi">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>会员充值</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="lds_pushbutton_wrap" name="pushButton_mhangpay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>会员还款</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="lds_pushbutton_wrap" name="pushButton_present">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>赠送</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="7">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_kaiqianxiang">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>开钱箱</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="lds_pushbutton_wrap" name="pushButton_changyong">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>常用商品</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="lds_pushbutton_wrap" name="pushButton_tel_coming">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>来电信息</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="public_pushbuton_rt_check" name="pushButton_takebill">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_xiugaimima">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>修改密码</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_jiaoban">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>交班操作</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="lds_pushbutton_wrap_noPress" name="pushButton_list_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>功能操作</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="8">
+     <widget class="lds_pushbutton_wrap" name="pushButton_discount_bill">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>整单折扣</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_guqing">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>沽清</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_tax">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>税率</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_suoping">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>锁屏</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="7">
+     <widget class="lds_pushbutton_wrap" name="pushButton_sys_switchback">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:#ff546b;</string>
+      </property>
+      <property name="text">
+       <string>后台</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="lds_pushbutton_wrap" name="pushButton_dishname_switch">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>商品名称</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_dish</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame_bottom">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>610</y>
+     <width>401</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,2,2,2,2,3">
+    <item>
+     <widget class="QPushButton" name="pushButton_del">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>删除</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/btn_icon/10.png</normaloff>:/image/btn_icon/10.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_bottom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_detail">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>修改</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/btn_icon/11.png</normaloff>:/image/btn_icon/11.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_bottom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="public_pushbuton_rt_check" name="pushButton_member">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>会员</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/btn_icon/9.png</normaloff>:/image/btn_icon/9.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_bottom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="lds_pushbutton_oblique" name="pushButton_other">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>其他</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/btn_icon/11.png</normaloff>:/image/btn_icon/11.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_bottom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="lds_pushbutton_oblique" name="pushButton_bianma">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>编码</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/btn_icon/2.png</normaloff>:/image/btn_icon/2.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_bottom</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="public_pushbutton_pay" name="pushButton_pay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>结算</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="ftableview" name="tableView_subtype">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>100</y>
+     <width>256</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>tableView_subtype</string>
+   </property>
+  </widget>
+  <widget class="ftableview" name="tableView_type">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>20</y>
+     <width>256</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>tableView_subtype</string>
+   </property>
+  </widget>
+  <widget class="fexpandmain_tableview" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>200</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="lds_roundeddialog_title_frame" name="frame_deskinfo">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>30</y>
+     <width>192</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>6</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>6</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
+    <property name="spacing">
+     <number>2</number>
+    </property>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLabel" name="label_5">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>2</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:#ff546b</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_logo">
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_text">
+      <property name="outer_stylesheet" stdset="0">
+       <string>label_upon_bg</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,0,0">
+      <item>
+       <widget class="QLabel" name="label_head_name">
+        <property name="text">
+         <string>品名</string>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>label_upon_bg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="label_click" name="label_head_num">
+        <property name="text">
+         <string>数量</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>label_upon_bg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="label_click" name="label_head_total">
+        <property name="text">
+         <string>金额</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+        <property name="outer_stylesheet" stdset="0">
+         <string>label_upon_bg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="fexpandmain_dish_btn" name="frame_dish_bottom2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>480</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_paytotal" native="true">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>420</y>
+     <width>158</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,1,0">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="label_total_desc">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt;</string>
+      </property>
+      <property name="text">
+       <string>总计</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>fexpandmain_tableview</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_void">
+      <property name="styleSheet">
+       <string notr="true">font-size:15pt;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>fexpandmain_tableview</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_total">
+      <property name="styleSheet">
+       <string notr="true">color:#ff546b;font-size:18pt;font-weight:bold;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>fexpandmain_tableview</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_quickpay_top">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>490</y>
+     <width>259</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="outer_stylesheet" stdset="0">
+    <string>label_div</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_quickpay">
+   <property name="geometry">
+    <rect>
+     <x>36</x>
+     <y>527</y>
+     <width>261</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3" rowstretch="1,1,1,1,1,1" columnstretch="1,1,1,1">
+    <item row="1" column="1">
+     <widget class="public_pushbutton_numkey" name="pushButton_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="public_pushbutton_numkey" name="pushButton_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="public_pushbutton_numkey" name="pushButton_12">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="public_pushbutton_numkey" name="pushButton_16">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>20</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="public_pushbutton_numkey" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="3" rowspan="2">
+     <widget class="public_pushbutton_LinearGradient" name="pushButton_mobile_pay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>摇钱树支付</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/quick_pay.png</normaloff>:/image/quick_pay.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="public_pushbutton_numkey" name="pushButton_11">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="public_pushbutton_numkey" name="pushButton_backspace">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="public_pushbutton_numkey" name="pushButton_8">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="public_pushbutton_numkey" name="pushButton_18">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="public_pushbutton_numkey" name="pushButton_10">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="public_pushbutton_numkey" name="pushButton_19">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>50</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="public_pushbutton_numkey" name="pushButton_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="public_pushbutton_numkey" name="pushButton_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+      <item>
+       <widget class="lds_label_doublespinbox" name="widget_total" native="true"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="3" rowspan="2">
+     <widget class="public_pushbutton_LinearGradient" name="pushButton_cash_pay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>现金支付</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res.qrc">
+        <normaloff>:/image/quick_cash.png</normaloff>:/image/quick_cash.png</iconset>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="public_pushbutton_numkey" name="pushButton_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="public_pushbutton_numkey" name="pushButton_14">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="public_pushbutton_numkey" name="pushButton_7">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="outer_stylesheet" stdset="0">
+       <string>pushbutton_key</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2" colspan="2">
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0">
+      <item>
+       <widget class="lds_label_doublespinbox" name="widget_change" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ftableview</class>
+   <extends>QTableView</extends>
+   <header>ftableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>btnlanguageswicth</class>
+   <extends>QPushButton</extends>
+   <header>btnlanguageswicth.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_roundeddialog_title_frame</class>
+   <extends>QFrame</extends>
+   <header>lds_roundeddialog_title_frame.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>fexpandmain_tableview</class>
+   <extends>QTableView</extends>
+   <header>fexpandmain_tableview.h</header>
+  </customwidget>
+  <customwidget>
+   <class>label_click</class>
+   <extends>QLabel</extends>
+   <header>label_click.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_pushbutton_wrap</class>
+   <extends>QPushButton</extends>
+   <header>lds_pushbutton_wrap.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbutton_pay</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbutton_pay.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbutton_numkey</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbutton_numkey.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_label_doublespinbox</class>
+   <extends>QWidget</extends>
+   <header>lds_label_doublespinbox.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>fexpandmain_dish_btn</class>
+   <extends>QFrame</extends>
+   <header>fexpandmain_dish_btn.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbutton_LinearGradient</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbutton_lineargradient.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_pushbutton_oblique</class>
+   <extends>QPushButton</extends>
+   <header>lds_pushbutton_oblique.h</header>
+  </customwidget>
+  <customwidget>
+   <class>lds_pushbutton_wrap_noPress</class>
+   <extends>QPushButton</extends>
+   <header>lds_pushbutton_wrap_nopress.h</header>
+  </customwidget>
+  <customwidget>
+   <class>public_pushbuton_rt_check</class>
+   <extends>QPushButton</extends>
+   <header>public_pushbuton_rt_check.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
